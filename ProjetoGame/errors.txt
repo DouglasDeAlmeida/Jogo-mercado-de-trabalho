@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 26: play requires a file
-    play audio
-              ^
+File "game/carreira.rpy", line 26: python block expects a non-empty block.
+    init python: 
+                 ^
+
+File "game/carreira.rpy", line 27: expected statement.
+    def mcdonalds1():
+                  ^
+
+File "game/carreira.rpy", line 70: expected statement.
+    def tempo(x):
+             ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu Apr 28 23:20:17 2022
+Wed May 11 19:19:58 2022
