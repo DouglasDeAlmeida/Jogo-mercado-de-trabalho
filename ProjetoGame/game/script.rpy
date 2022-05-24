@@ -2,11 +2,7 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define felicidade = 50
-define saude = 50
-define dinheiro = 4000
-define despesa = 1000
-define salario = 0
+define e = Character("Eileen")
 
 define protagonista = Character("James")
 define som = 0.5 #volume para a narração
@@ -25,7 +21,7 @@ label start:
     # directory.
     call prologue
     call inicio_Carreira
-    "teste funcionou"
+    
     # This ends the game.
     return
 

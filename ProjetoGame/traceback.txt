@@ -1,34 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 22, in script call
+  File "game/script.rpy", line 27, in script call
     call inicio_Carreira
-  File "game/carreira.rpy", line 6, in script call
-    call mcdonalds1
-  File "game/carreira.rpy", line 30, in script
-    $ felicidade = felicidade - 2
-  File "game/carreira.rpy", line 30, in <module>
-    $ felicidade = felicidade - 2
-NameError: name 'felicidade' is not defined
+  File "game/carreira.rpy", line 20, in script call
+    call play_pong
+  File "game/carreira.rpy", line 80, in script
+    e "I win!"
+Exception: Sayer 'e' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 22, in script call
+  File "game/script.rpy", line 27, in script call
     call inicio_Carreira
-  File "game/carreira.rpy", line 6, in script call
-    call mcdonalds1
-  File "game/carreira.rpy", line 30, in script
-    $ felicidade = felicidade - 2
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/carreira.rpy", line 30, in <module>
-    $ felicidade = felicidade - 2
-NameError: name 'felicidade' is not defined
+  File "game/carreira.rpy", line 20, in script call
+    call play_pong
+  File "game/carreira.rpy", line 80, in script
+    e "I win!"
+  File "renpy/ast.py", line 681, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'e' is not defined.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 ProjetoGame 1.0
-Wed May 11 19:20:40 2022
+Tue May 24 14:16:00 2022

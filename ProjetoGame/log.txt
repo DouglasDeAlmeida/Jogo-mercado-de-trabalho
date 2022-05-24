@@ -1,4 +1,4 @@
-Wed May 11 19:12:33 2022
+Tue May 24 14:51:28 2022
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
  
@@ -7,1415 +7,34 @@ Bootstrap to the start of init.init took 0.06s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.21s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 4: Menu does not contain any choices.
-    menu:
-         ^
-
-File "game/carreira.rpy", line 15: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/carreira.rpy", line 25: expected statement.
-    salario = 1500
-            ^
-
-File "game/carreira.rpy", line 26: expected statement.
-    felicidade = felicidade - 2
-               ^
-
-File "game/carreira.rpy", line 31: expected statement.
-    salario = 1200
-            ^
-
-File "game/carreira.rpy", line 32: expected statement.
-    felicidade = felicidade - 4
-               ^
-
-File "game/carreira.rpy", line 37: expected statement.
-    sorte = renpy.random.random()
-          ^
-
-File "game/carreira.rpy", line 39: expected statement.
-    dinheiro = dinheiro + 5000
-             ^
-
-File "game/carreira.rpy", line 41: expected statement.
-    dinheiro = dinheiro - 2000
-             ^
-
-File "game/carreira.rpy", line 46: expected statement.
-    despesa = despesa + 200
-            ^
-
-File "game/carreira.rpy", line 62: expected statement.
-    despesa = despesa - x
-            ^
-
-File "game/carreira.rpy", line 66: expected statement.
-    for i in range(x):
-          ^
-
-File "game/status_verification.rpy", line 18: expected statement.
-    despesas = despesas - x
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-controller: '03000000632500007505000000000000' 'PS3 Controller' 1L
-Resetting cache.
-Bootstrap to the start of init.init took 71.66s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 17: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/carreira.rpy", line 29: expected statement.
-    salario = 1500
-            ^
-
-File "game/carreira.rpy", line 30: expected statement.
-    felicidade = felicidade - 2
-               ^
-
-File "game/carreira.rpy", line 35: expected statement.
-    salario = 1200
-            ^
-
-File "game/carreira.rpy", line 36: expected statement.
-    felicidade = felicidade - 4
-               ^
-
-File "game/carreira.rpy", line 41: expected statement.
-    sorte = renpy.random.random()
-          ^
-
-File "game/carreira.rpy", line 43: expected statement.
-    dinheiro = dinheiro + 5000
-             ^
-
-File "game/carreira.rpy", line 45: expected statement.
-    dinheiro = dinheiro - 2000
-             ^
-
-File "game/carreira.rpy", line 50: expected statement.
-    despesa = despesa + 200
-            ^
-
-File "game/carreira.rpy", line 66: expected statement.
-    despesa = despesa - x
-            ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    for i in range(x):
-          ^
-
-File "game/status_verification.rpy", line 18: expected statement.
-    despesas = despesas - x
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 72.97s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 17: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    menu:
-    ^
-
-File "game/carreira.rpy", line 29: expected statement.
-    salario = 1500
-            ^
-
-File "game/carreira.rpy", line 30: expected statement.
-    felicidade = felicidade - 2
-               ^
-
-File "game/carreira.rpy", line 35: expected statement.
-    salario = 1200
-            ^
-
-File "game/carreira.rpy", line 36: expected statement.
-    felicidade = felicidade - 4
-               ^
-
-File "game/carreira.rpy", line 41: expected statement.
-    sorte = renpy.random.random()
-          ^
-
-File "game/carreira.rpy", line 43: expected statement.
-    dinheiro = dinheiro + 5000
-             ^
-
-File "game/carreira.rpy", line 45: expected statement.
-    dinheiro = dinheiro - 2000
-             ^
-
-File "game/carreira.rpy", line 50: expected statement.
-    despesa = despesa + 200
-            ^
-
-File "game/carreira.rpy", line 66: expected statement.
-    despesa = despesa - x
-            ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    for i in range(x):
-          ^
-
-File "game/status_verification.rpy", line 18: expected statement.
-    despesas = despesas - x
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 100.29s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 29: expected statement.
-    salario = 1500
-            ^
-
-File "game/carreira.rpy", line 30: expected statement.
-    felicidade = felicidade - 2
-               ^
-
-File "game/carreira.rpy", line 35: expected statement.
-    salario = 1200
-            ^
-
-File "game/carreira.rpy", line 36: expected statement.
-    felicidade = felicidade - 4
-               ^
-
-File "game/carreira.rpy", line 41: expected statement.
-    sorte = renpy.random.random()
-          ^
-
-File "game/carreira.rpy", line 43: expected statement.
-    dinheiro = dinheiro + 5000
-             ^
-
-File "game/carreira.rpy", line 45: expected statement.
-    dinheiro = dinheiro - 2000
-             ^
-
-File "game/carreira.rpy", line 50: expected statement.
-    despesa = despesa + 200
-            ^
-
-File "game/carreira.rpy", line 66: expected statement.
-    despesa = despesa - x
-            ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    for i in range(x):
-          ^
-
-File "game/status_verification.rpy", line 18: expected statement.
-    despesas = despesas - x
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 137.65s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 35: expected statement.
-    salario = 1200
-            ^
-
-File "game/carreira.rpy", line 36: expected statement.
-    felicidade = felicidade - 4
-               ^
-
-File "game/carreira.rpy", line 41: expected statement.
-    sorte = renpy.random.random()
-          ^
-
-File "game/carreira.rpy", line 43: expected statement.
-    dinheiro = dinheiro + 5000
-             ^
-
-File "game/carreira.rpy", line 45: expected statement.
-    dinheiro = dinheiro - 2000
-             ^
-
-File "game/carreira.rpy", line 50: expected statement.
-    despesa = despesa + 200
-            ^
-
-File "game/carreira.rpy", line 66: expected statement.
-    despesa = despesa - x
-            ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    for i in range(x):
-          ^
-
-File "game/status_verification.rpy", line 18: expected statement.
-    despesas = despesas - x
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 172.95s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 70: expected statement.
-    for i in range(x):
-          ^
-
-File "game/status_verification.rpy", line 18: expected statement.
-    despesas = despesas - x
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 345.50s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.06s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 393.79s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 22, in script call
-    call inicio_Carreira
-  File "game/carreira.rpy", line 6, in script call
-    call mcdonalds1
-  File "game/carreira.rpy", line 30, in script
-    $ felicidade = felicidade - 2
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/carreira.rpy", line 30, in <module>
-    $ felicidade = felicidade - 2
-NameError: name 'felicidade' is not defined
-
-While running game code:
-  File "game/script.rpy", line 22, in script call
-    call inicio_Carreira
-  File "game/carreira.rpy", line 6, in script call
-    call mcdonalds1
-  File "game/carreira.rpy", line 30, in script
-    $ felicidade = felicidade - 2
-  File "game/carreira.rpy", line 30, in <module>
-    $ felicidade = felicidade - 2
-NameError: name 'felicidade' is not defined
-Resetting cache.
-Bootstrap to the start of init.init took 433.31s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 26: python block expects a non-empty block.
-    init python: 
-                 ^
-
-File "game/carreira.rpy", line 27: expected statement.
-    def mcdonalds1:
-                  ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    def tempo(x):
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 442.56s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 26: python block expects a non-empty block.
-    init python: 
-                 ^
-
-File "game/carreira.rpy", line 27: expected statement.
-    def mcdonalds1():
-                  ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    def tempo(x):
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 444.34s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 26: python block expects a non-empty block.
-    init python: 
-                 ^
-
-File "game/carreira.rpy", line 27: expected statement.
-    def mcdonalds1():
-                  ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    def tempo(x):
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 445.63s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-
-File "game/carreira.rpy", line 26: python block expects a non-empty block.
-    init python: 
-                 ^
-
-File "game/carreira.rpy", line 27: expected statement.
-    def mcdonalds1():
-                  ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    def tempo(x):
-             ^
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 486.39s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.02s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 22, in script call
-    call inicio_Carreira
-  File "game/carreira.rpy", line 6, in script call
-    call mcdonalds1
-  File "game/carreira.rpy", line 30, in script
-    $ felicidade = felicidade - 2
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/carreira.rpy", line 30, in <module>
-    $ felicidade = felicidade - 2
-NameError: name 'felicidade' is not defined
-
-While running game code:
-  File "game/script.rpy", line 22, in script call
-    call inicio_Carreira
-  File "game/carreira.rpy", line 6, in script call
-    call mcdonalds1
-  File "game/carreira.rpy", line 30, in script
-    $ felicidade = felicidade - 2
-  File "game/carreira.rpy", line 30, in <module>
-    $ felicidade = felicidade - 2
-NameError: name 'felicidade' is not defined
-Resetting cache.
-Bootstrap to the start of init.init took 521.34s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 600.10s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 647.18s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 668.62s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 708.22s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 750.75s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 796.45s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 814.93s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 834.85s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 868.44s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 963.72s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.08s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.02s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Dump and make backups. took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 997.19s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1131.68s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.02s
-Loading script took 0.10s
+Loading script took 0.16s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
 Running init code took 0.05s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.04s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1287.23s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 1311.72s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
-Dump and make backups. took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.03s
-DPI scale factor: 1.500000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.05s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 3840, 2160)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'Radeon RX 570 Series'
-Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Bootstrap to the start of init.init took 1394.86s
-Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.01s
-Loading script took 0.09s
-Loading save slot metadata. took 0.01s
-Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.02s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
 Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.05s
+Initial gc. took 0.02s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.04s
+Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.04s
+Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 3840, 2160)
@@ -1425,8 +44,15 @@ Vendor: 'ATI Technologies Inc.'
 Renderer: 'Radeon RX 570 Series'
 Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(3659, 2058) drawable=(3659, 2058)
+Screen sizes: virtual=(1920, 1080) physical=(2712, 1526) drawable=(2712, 1526)
 Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
@@ -1443,12 +69,19 @@ Load screen analysis took 0.01s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init took 2109.97s
+Bootstrap to the start of init.init took 257.80s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
-Loading script took 0.10s
+Loading script took 0.15s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
@@ -1460,7 +93,7 @@ Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\P
 Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.04s
+Initial gc. took 0.03s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
@@ -1489,7 +122,7 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2880, 1526) drawable=(2880, 1526)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 2568.64s
+Bootstrap to the start of init.init took 276.27s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
@@ -1511,12 +144,57 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 3840, 2160)
+swap interval: 1 frames
+Windowed mode.
+Vendor: 'ATI Technologies Inc.'
+Renderer: 'Radeon RX 570 Series'
+Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2880, 1526) drawable=(2880, 1526)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 531.29s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.10s
+Loading save slot metadata. took 0.01s
+Loading persistent took 0.00s
+Importing _renpysteam: ImportError('No module named _renpysteam',)
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\ProjetoGame':
+Dump and make backups. took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.03s
+DPI scale factor: 1.500000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: "Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.06s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
@@ -1541,15 +219,15 @@ Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
 Resetting cache.
-Bootstrap to the start of init.init took 3318.27s
+Bootstrap to the start of init.init took 689.99s
 Early init took 0.00s
-Loader init took 0.03s
+Loader init took 0.02s
 Loading error handling took 0.01s
 Loading script took 0.10s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.04s
+Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -1557,7 +235,7 @@ Backing up script files to 'C:\\Users\\PICHAU\\AppData\\Roaming/RenPy/backups\\P
 Dump and make backups. took 0.05s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.05s
+Initial gc. took 0.04s
 DPI scale factor: 1.500000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: "Couldn't load nvlib." (can be ignored)
@@ -1567,7 +245,7 @@ Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.04s
+Save screen analysis took 0.02s
 Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
@@ -1585,5 +263,10 @@ Version: '4.6.14800 Compatibility Profile Context 22.5.1 30.0.15021.11005'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2880, 1526) drawable=(2880, 1526)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(3840, 2066) drawable=(3840, 2066)
-Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

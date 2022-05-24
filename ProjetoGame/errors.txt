@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/carreira.rpy", line 26: python block expects a non-empty block.
-    init python: 
-                 ^
-
-File "game/carreira.rpy", line 27: expected statement.
-    def mcdonalds1():
-                  ^
-
-File "game/carreira.rpy", line 70: expected statement.
-    def tempo(x):
-             ^
+File "game/carreira.rpy", line 68: choice menuitem expects a non-empty block.
+    'Sistemas de Informação':
+                             ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed May 11 19:19:58 2022
+Tue May 24 14:49:21 2022

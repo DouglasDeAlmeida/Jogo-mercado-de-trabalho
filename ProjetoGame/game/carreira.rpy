@@ -15,8 +15,10 @@ label inicio_Carreira:
             call ifood1
         "vou jogar no bixo":
             call jogo_do_bixo
-            pass
-
+            
+        "apostar no pong":
+            call play_pong
+    scene clock1        
     "passaram-se 1 ano"
     #call tempo(12)
     scene thinking
@@ -39,7 +41,7 @@ label mcdonalds1:
     return
 
 label ifood1:
-    scene deliveryman
+    scene ifood
     'ifood'
     $ salario = 1200
     $ felicidade = felicidade - 4
@@ -59,26 +61,67 @@ label jogo_do_bixo:
 label faculdade:
     scene universidade
     protagonista"Qual curso devo fazer?"
+    menu:
+        "Ciências Contabeis":
+            scene contabilidade
+            #aqui seria bom registrar que ele fez esta escolha 
+        "Sistemas de Informação":
+            scene computing
+            #aqui seria bom registrar que ele fez esta escolha 
+        "Gastronomia":
+            pass
+            #aqui seria bom registrar que ele fez esta escolha 
+        "Ciência da Computação":
+            scene computing
+            #aqui seria bom registrar que ele fez esta escolha 
+    "não saquei"
     $despesa = despesa + 200
-
-
-
-label status:
-    if felicidade <= 0:
-        return #colocar aqui o final triste
-    elif saude <=0:
-        return # colocar aqui o ataque cardíaco
-    elif dinheiro <= 0:
-        return #colocar aqui o final sem dinheiro
-    else:
-        return #aqui significa que o jogo pode continuar sem problema.
-
-
-label despesas(x):
-    $despesa = despesa - x
     return 
+label contabeis:
+    scene contabilidade
+    "fim do inicio"
+    return
+
+label play_pong:
+
+    window hide  # Hide the window and  quick menu while in pong
+    $ quick_menu = False
+
+    call screen pong
+
+    $ quick_menu = True
+    window show
+
+#show eileen vhappy
+scene eileen_img
+if _return == "eileen":
+
+    e "I win!"
+
+else:
+
+    e "You won! Congratulations."
+ 
+
+
+
 
 init python: 
+
+    def status():
+        if felicidade <= 0:
+            return #colocar aqui o final triste
+        elif saude <=0:
+            return # colocar aqui o ataque cardíaco
+        elif dinheiro <= 0:
+            return #colocar aqui o final sem dinheiro
+        else:
+            return #aqui significa que o jogo pode continuar sem problema.
+
+
+    def despesas(x):
+        despesa = despesa - x
+        return despesa
     def tempo(x):
         for i in range(x):
             dinheiro = dinheiro - despesa + salario
