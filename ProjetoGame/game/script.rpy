@@ -21,7 +21,7 @@ label start:
     # directory.
     call prologue
     call inicio_Carreira
-    
+    call morte_sem_dinheiro
     # This ends the game.
     return
 

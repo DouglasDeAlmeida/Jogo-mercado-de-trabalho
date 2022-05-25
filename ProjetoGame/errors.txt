@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/carreira.rpy", line 68: choice menuitem expects a non-empty block.
-    'Sistemas de Informação':
-                             ^
+File "game/lazer.rpy", line 63: expected statement.
+    "Você decide que desobedecer seu chefe para ficar por pouco tempo na festa não valeria a pena.":
+                                                                                                   ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue May 24 14:49:21 2022
+Wed May 25 06:31:21 2022

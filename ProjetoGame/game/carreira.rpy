@@ -25,7 +25,7 @@ label inicio_Carreira:
     protagonista "Será que eu uso o dinheiro que eu guardei nos ultimos meses para começar uma faculdade ? "
     menu:
         "Começar uma graduação":
-            pass
+            
             call faculdade
         "Não é o momento certo":
             pass
@@ -69,12 +69,12 @@ label faculdade:
             scene computing
             #aqui seria bom registrar que ele fez esta escolha 
         "Gastronomia":
-            pass
+            scene restaurante
             #aqui seria bom registrar que ele fez esta escolha 
         "Ciência da Computação":
             scene computing
             #aqui seria bom registrar que ele fez esta escolha 
-    "não saquei"
+    "fim da faculdade (APAGAR DEPOIS)"
     $despesa = despesa + 200
     return 
 label contabeis:
@@ -105,24 +105,3 @@ else:
 
 
 
-
-init python: 
-
-    def status():
-        if felicidade <= 0:
-            return #colocar aqui o final triste
-        elif saude <=0:
-            return # colocar aqui o ataque cardíaco
-        elif dinheiro <= 0:
-            return #colocar aqui o final sem dinheiro
-        else:
-            return #aqui significa que o jogo pode continuar sem problema.
-
-
-    def despesas(x):
-        despesa = despesa - x
-        return despesa
-    def tempo(x):
-        for i in range(x):
-            dinheiro = dinheiro - despesa + salario
-        return dinheiro

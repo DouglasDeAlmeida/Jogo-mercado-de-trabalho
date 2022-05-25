@@ -32,3 +32,4 @@ label morte_sem_saude:
 label morte_sem_dinheiro:
     scene morte_pobre
     "Você foi à falência, sem dinheiro para pagar o aluguel ou comer teve que ir para às ruas. Em uma noite outro mendigo te esfaqueou até a morte para ficar com a sua barraca em baixo da ponte."
+    return
