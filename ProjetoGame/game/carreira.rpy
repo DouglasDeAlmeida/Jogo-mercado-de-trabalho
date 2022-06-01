@@ -1,11 +1,7 @@
-define felicidade = 50 #vão de 0-100
-define saude = 50 #0-100
-define dinheiro = 4000
-define despesa = 1000
-define salario = 0
 
+#TODO: fazer um marcador oculto de trabalho (confiança do seu atual chefe contigo)
 label inicio_Carreira:
-    scene thinking
+    scene thinking #imagem de fundo
     protagonista "Não consigo passar mais nem um minuto nessa casa, preciso de um lugar pra mim. Tenho um pouco de dinheiro que ganhei ajudando meu pai, entretanto, não é muito."
     menu:
         "Eu posso aceitar um emprego no McDonalds.":
@@ -16,11 +12,14 @@ label inicio_Carreira:
         "vou jogar no bixo":
             call jogo_do_bixo
             
-        "apostar no pong":
+        "Jogar ping pong":
             call play_pong
     scene clock1        
     "passaram-se 1 ano"
-    #call tempo(12)
+    call tempo(12)
+    return
+
+label decision_uni:
     scene thinking
     protagonista "Será que eu uso o dinheiro que eu guardei nos ultimos meses para começar uma faculdade ? "
     menu:
@@ -29,7 +28,6 @@ label inicio_Carreira:
             call faculdade
         "Não é o momento certo":
             pass
-
     return
 
 
@@ -74,17 +72,15 @@ label faculdade:
         "Ciência da Computação":
             scene computing
             #aqui seria bom registrar que ele fez esta escolha 
+    $despesa = despesa + 250
+    call tempo(12)
     "fim da faculdade (APAGAR DEPOIS)"
-    $despesa = despesa + 200
+    
     return 
-label contabeis:
-    scene contabilidade
-    "fim do inicio"
-    return
 
 label play_pong:
 
-    window hide  # Hide the window and  quick menu while in pong
+    window hide  
     $ quick_menu = False
 
     call screen pong
@@ -92,16 +88,55 @@ label play_pong:
     $ quick_menu = True
     window show
 
-#show eileen vhappy
 scene eileen_img
 if _return == "eileen":
 
-    e "I win!"
+    e "Perdeu Otário!"
 
 else:
 
-    e "You won! Congratulations."
- 
+    e "Você ganhou, parabens!"
 
 
 
+#TODO: abaixo estão as escolhas sobre carreira que ainda não foram implementadas.
+
+label palestra_tecnologia:
+    scene conferencia_tec
+    "Você leu em um cartaz sobre uma palestra de tecnologia paga"
+    
+    menu:
+        "participar":
+            #mais educação
+            #menos dinheiro
+            pass
+        "recusar":
+            pass
+
+label covid_38:
+    protagonista"não estou me sentindo muito bem, acho que contraí a nova variante da Covid-38"
+    menu:
+        "pedir para trabalhar de casa pro chefe":
+            pass
+            #mais dinheiro, menos saúde
+        "ir ao trabalho mesmo assim":
+            pass
+            # risco de contaminar o escritório com essa nova variante muito mais letal
+            "Você contaminou o escritório todo com a sua nova variante, que por sinal é muito mais letal."
+            "devido a complicações gerada pela covid-38 o seu chefe morre e você assume o lugar dele"
+                #mais dinheiro , menos saúde
+        "não trabalhar":
+            pass
+            #menos dinheiro, mais saúde, menos marcador de trabalho
+
+    return
+
+label guru_investimento:
+    "Você leu em um cartaz sobre um tal “Guru dos investimentos” , uma palestra paga, com o guru Gian Buffoni"
+    menu:
+        "Ir à palestra.":
+            #menos dinheiro
+            "Você aprendeu uma lição de vida: Gastar dinheiro na palestra do “guru do investimento” não é um bom investimento."
+            pass
+        "Ignorar.":
+            pass

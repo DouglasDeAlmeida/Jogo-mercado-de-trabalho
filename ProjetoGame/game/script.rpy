@@ -3,27 +3,52 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 define e = Character("Eileen")
-
+define felicidade = 50 #vão de 0-100
+define saude = 50 #0-100
+define dinheiro = 4000
+define despesa = 1000
+define salario = 0
 define protagonista = Character("James")
 define som = 0.5 #volume para a narração
+define sentinela = True
 
+#define lista = [inicio_Carreira, status,decision_uni]
 # The game starts here.
 label start:
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-    play music "audio/Trilha.mp3" volume 0.1
-    
+    play music "audio/Trilha.mp3" volume 0.8
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
     call prologue
+    show screen hbox_screen
     call inicio_Carreira
-    call morte_sem_dinheiro
+    call status
+    call decision_uni
+    call thailand
+    call grupo_caminhada
+    call festa_bernardo
+    call covid_38
+    call supermercado
+    call tinder
     # This ends the game.
+
+
+    #fazer um loop com um if caso seja true
+#    init python:
+#        lista = [inicio_Carreira, status,decision_uni]
+#        count = 0
+#        while count < len(lista):
+#            renpy.call status
+#            if sentinela is True:
+#                call lista[count]
+
     return
+
 
 label prologue:
     scene casa
@@ -38,7 +63,7 @@ label prologue:
     scene kids
     play sound "audio/cenario3.flac" volume som
 
-    "James não se dava bem com as outras crianças mais velhas e durante 1 ano sofreu na mão delas, cansado de ser tratado do mesmo jeito, começou a se rebelar e brigar."
+    "James não se dava bem com as outras crianças mais velhas e durante 1 ano sofreu na mãos delas, cansado de ser tratado do mesmo jeito, começou a se rebelar e brigar."
     
     scene orphanato
     play sound "audio/cenario4.flac" volume som
@@ -47,20 +72,20 @@ label prologue:
     
     scene professor_pais
 
-    "Devido ao seu comportamento, na hora da adoção James sempre era relatado pela dona do orfanato como uma criança de comportamento rebelde e com pavio curto e nenhum adulto desejava adotá-lo."
+    "Devido ao seu comportamento, na hora da adoção James sempre era relatado pela dona do orfanato como uma criança de comportamento rebelde e com pavio curto. Por esse motivo, nenhum adulto desejava adotá-lo."
     
     play sound "audio/cenario5.flac" volume som
     scene aula
 
-    "Com 6 anos James já havia se acostumado aos castigos, e até a apreciá-los, passou a levar livros de ficção e matemática para o período de isolamento , inicialmente teve muita dificuldade na leitura, porém , após um tempo começou a entendê-los e adquiriu um domínio na área de exatas superior às demais crianças."
+    "Aos 6 anos James já havia se acostumado aos castigos, e até a apreciá-los, passou a levar livros de ficção e matemática para o período de isolamento. Inicialmente teve muita dificuldade na leitura, porém , após um tempo começou a entendê-los e adquiriu um domínio na área de exatas superior às demais crianças."
 
     play sound "audio/cenario6.flac" volume som
     scene familia
-    "Ainda assim James continuava com sua fama de rebelde e nenhum adulto queria adotá-lo. Somente aos 10  anos  James foi adotado , por uma família de classe média , que já possuía uma filha mais velha."
+    "Ainda assim James continuava com sua fama de rebelde e nenhum adulto queria adotá-lo. Somente aos 10  anos  James foi adotado, por uma família de classe média, que já possuía uma filha mais velha."
     
     play sound "audio/cenario7.flac" volume som
     scene prova
-    "Enviaram James para outra escola pública, lá, se aprofundou ainda mais na área de exatas, porém passava dificuldade em matérias de humanas , conseguiu fazer um pequeno grupo de amigos porém não se relacionava bem com a maioria das crianças e professores."
+    "Enviaram James para outra escola pública, lá, se aprofundou ainda mais na área de exatas, porém passava dificuldade em matérias de humanas, conseguiu fazer um pequeno grupo de amigos porém não se relacionava bem com a maioria das crianças e professores."
     scene fav_daughter
     "Em casa, era comparado à filha do casal que tirava notas superiores a James em todas as matérias, nunca recebendo reconhecimento pela sua performance acima da média em exatas."
     scene bar2

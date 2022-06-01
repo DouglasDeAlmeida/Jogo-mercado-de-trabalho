@@ -1,18 +1,22 @@
 label thailand:
-    scene bANKOK
+    scene thai
     "depois de uma viajem relaxante para a tailândia você se sente muito mais feliz. "
-    #aumentar a felicidade
+    $felicidade += 10 
+    
     scene prostituta
     "Entretanto, durante sua estadia em Bankok você contraiu gonorreia de uma prostituta"
-    #diminuir a saúde
+    
+    $saude -= 10
     return
 label grupo_caminhada:
     scene caminhada
     "Seu amigo Bernardo te convidou para participar do grupo de caminhada"
     menu:
         "participar":
-            #mais FELICIDADE
-            #mais saúde
+            $felicidade += 5
+            
+            $saude += 5
+            
             pass
         "recusar":
             pass
@@ -24,17 +28,21 @@ label supermercado:
     menu:
         "Comprar o leite mais barato":
             pass
-            # -5 de dinheiro
+            
+            $dinheiro -=50
             # 50% de chance de comprar leite estragado
                 # menos saúde se for o caso
                 # TALVEZ: caso não esteja estragado aumentar saúde
         "Comprar o leite mais caro":
             pass
-            #-10 de dinheiro
+            
+            $dinheiro -=100
+            $saude += 5 
             #um pouco mais de saude
     return
 
 label festa_bernardo:
+    scene festa
     "Seu melhor amigo está dando uma festa o que você faz"
     menu:
         "Dizer ao chefe que você está doente e não poderá ir trabalhar":

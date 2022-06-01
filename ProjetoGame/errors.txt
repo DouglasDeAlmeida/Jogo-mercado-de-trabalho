@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/lazer.rpy", line 63: expected statement.
-    "Você decide que desobedecer seu chefe para ficar por pouco tempo na festa não valeria a pena.":
-                                                                                                   ^
+File "game/amorosa.rpy", line 16: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/amorosa.rpy", line 18: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation.
+    "Pedir para ela fazer um aborto":
+    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed May 25 06:31:21 2022
+Sat May 28 17:59:58 2022
