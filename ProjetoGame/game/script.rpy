@@ -7,6 +7,7 @@ define felicidade = 50 #vão de 0-100
 define saude = 50 #0-100
 define dinheiro = 4000
 define despesa = 1000
+define educacao = 0
 define salario = 0
 define protagonista = Character("James")
 define som = 0.5 #volume para a narração
@@ -26,7 +27,9 @@ label start:
     # directory.
     call prologue
     show screen hbox_screen
+    
     call inicio_Carreira
+    call amigo_influencer
     call status
     call decision_uni
     call thailand
@@ -37,8 +40,6 @@ label start:
     call tinder
     # This ends the game.
 
-
-    #fazer um loop com um if caso seja true
 #    init python:
 #        lista = [inicio_Carreira, status,decision_uni]
 #        count = 0

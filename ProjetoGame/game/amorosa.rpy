@@ -37,8 +37,8 @@ label affair:
     "James descobre que sua esposa está o traindo com o professor de tênis dela"
     menu:
         "pedir divórcio":
-            #diminui felicidade
+            $felicidade -= 15
             pass
         "perdoar ela":
-            #felicidade diminui um pouco
+            $felicidade -= 10
             pass

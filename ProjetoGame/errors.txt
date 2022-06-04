@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/amorosa.rpy", line 16: menu statement expects a non-empty block.
-    menu:
-        ^
-
-File "game/amorosa.rpy", line 18: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation.
-    "Pedir para ela fazer um aborto":
-    ^
+File "game/custom_screens.rpy", line 12: expected a keyword argument, colon, or end of line.
+    text "saúde [saude] " color "#da1e1e" style style.hbox.background"#999" 
+                                                                     ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat May 28 17:59:58 2022
+Wed Jun  1 09:23:56 2022
