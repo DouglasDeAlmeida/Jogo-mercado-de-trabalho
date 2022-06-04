@@ -9,6 +9,8 @@ define dinheiro = 4000
 define despesa = 1000
 define educacao = 0
 define salario = 0
+define trabalho = 0
+define socio
 define protagonista = Character("James")
 define som = 0.5 #volume para a narração
 define sentinela = True
