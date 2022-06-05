@@ -1,36 +1,48 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 15, in script
-    define lista = [inicio_Carreira, status,decision_uni]
-  File "game/script.rpy", line 15, in script
-    define lista = [inicio_Carreira, status,decision_uni]
-  File "game/script.rpy", line 15, in <module>
-    define lista = [inicio_Carreira, status,decision_uni]
-NameError: name 'inicio_Carreira' is not defined
+  File "game/script.rpy", line 22, in script
+    pause
+  File "renpy/common/000statements.rpy", line 455, in execute_pause
+    renpy.pause()
+IOError: Couldn't find file 'audio/muppet2.webm'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/bootstrap.py", line 331, in bootstrap
-    renpy.main.main()
-  File "renpy/main.py", line 560, in main
-    renpy.game.context().run(node)
-  File "game/script.rpy", line 15, in script
-    define lista = [inicio_Carreira, status,decision_uni]
-  File "game/script.rpy", line 15, in script
-    define lista = [inicio_Carreira, status,decision_uni]
-  File "renpy/ast.py", line 2213, in execute
-    self.set()
-  File "renpy/ast.py", line 2224, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "renpy/python.py", line 2269, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 15, in <module>
-    define lista = [inicio_Carreira, status,decision_uni]
-NameError: name 'inicio_Carreira' is not defined
+  File "game/script.rpy", line 22, in script
+    pause
+  File "renpy/ast.py", line 2015, in execute
+    self.call("execute")
+  File "renpy/ast.py", line 2003, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 455, in execute_pause
+    renpy.pause()
+  File "renpy/exports.py", line 1563, in pause
+    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay)
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3325, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 4025, in interact_core
+    renpy.audio.audio.periodic()
+  File "renpy/audio/audio.py", line 1162, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "renpy/audio/audio.py", line 1140, in periodic_thread_main
+    periodic_pass()
+  File "renpy/audio/audio.py", line 1082, in periodic_pass
+    c.periodic()
+  File "renpy/audio/audio.py", line 518, in periodic
+    topf = load(filename)
+  File "renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'audio/muppet2.webm'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 ProjetoGame 1.0
-Sat May 28 13:46:17 2022
+Sun Jun  5 14:30:57 2022

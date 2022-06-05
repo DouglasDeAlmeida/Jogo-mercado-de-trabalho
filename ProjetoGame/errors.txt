@@ -2,9 +2,14 @@
 errors listed below, and try again.
 
 
-File "game/gastronomia.rpy", line 101: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Gastar todo o dinheiro em ingredientes mais caros"
-                                                       ^
+File "game/lazer.rpy", line 137: invalid syntax
+    saúde -= 20
+       ^
+    
+
+File "game/script.rpy", line 13: expected '=' not found.
+    define socio
+                ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sat Jun  4 18:23:56 2022
+Sun Jun  5 13:46:42 2022

@@ -35,6 +35,7 @@ label amigo_influencer:
             "Seu amigo bravo da forma que foi tratado dá um chilique na rede social dizendo que é um crime esse restaurante ainda estar aberto.
             Seu chefe ao descobrir que você ferrou com a reputação do restaurante lhe expulsa do estabelecimento.
             "
+            $dinheiro = 0
             jump morte_sem_dinheiro
     return
 
@@ -60,7 +61,7 @@ label ratatouille:
             $trabalho -= 1
         "Fingir que nada aconteceu e entregar a sopa ao garçom.":
             "Os clientes reclamam de que a sopa está com gosto horrível, pagam pela comida mas reclamam com o chefe e criticam o restaurante nas redes sociais. Consequentemente seu chefe fica frustrado com a sua incapacidade de preparar uma sopa."
-            $trabalho -5
+            $trabalho -=5
         "Curioso com o comportamento do rato e se sentindo inspirado em um filme, você tenta colocá-lo debaixo do seu chapéu de cozinheiro e deixa ele te guiar.":
             "Ao ver você se aproximando o rato tenta correr, você consegue pegar o rato mas em sua perseguição causou uma bagunça, derrubando diversos instrumentos de cozinha, seu chefe ao escutar o barulho vai em direção a cozinha." 
             "Ao chegar na cozinha seu chefe lhe vê tentando botar um rato na cabeça, em choque com a situação James apertou o rato que está em sua mão, em resposta, o rato morde a sua mão e sai correndo."
@@ -68,7 +69,7 @@ label ratatouille:
             $trabalho -= 10
             $saude -= 20
             $dinheiro -= 1000
-            $felicidade -= 5
+            $felicidade -= 50
     return
 
 
@@ -80,6 +81,7 @@ label bom_trabalho:
     return
 
 label waitress:
+    scene garconete
     protagonista"Acho que a Julia, a garçonete, está afim de mim, ela não vive me olhando e sempre sorri quando eu olho de volta."
     menu:
         "Dar em cima da garçonete":
@@ -88,6 +90,7 @@ label waitress:
             $trabalho -= 5
 
 label compras_restaurante:
+    scene comprar_ingredientes
     "James foi comprar comida para o restaurante com o budget de seu chefe"      
     menu:
         "Comprar ingredientes mais baratos e manter o dinheiro que sobrar para si mesmo":

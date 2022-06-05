@@ -7,6 +7,7 @@ label tinder:
             call gabriela
         "não baixar":
             pass
+    return
 
 
 label gabriela:
@@ -31,9 +32,10 @@ label amor_de_escritorio:
             pass
         "Continuar na sua":
             pass
-
+    return
 
 label affair:
+
     "James descobre que sua esposa está o traindo com o professor de tênis dela"
     menu:
         "pedir divórcio":
@@ -42,3 +44,8 @@ label affair:
         "perdoar ela":
             $felicidade -= 10
             pass
+
+    return
+label casamento:
+    #scene casamento
+

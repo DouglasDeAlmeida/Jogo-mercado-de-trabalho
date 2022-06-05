@@ -4,8 +4,10 @@ label despesas(x):
 
 label tempo(x):
     $ count = 1
-    while count < x:
+    
+    while count <= x:
         $dinheiro = dinheiro - despesa + salario
+        $trabalho += 5 #a cada ano empregado aumenta o marcador de trabalho
         $count +=1
     return dinheiro
 
@@ -17,12 +19,10 @@ label status:
         jump morte_sem_saude# colocar aqui o ataque cardíaco
         $sentinela = false
     elif dinheiro <= 0:
-        jump morte_sem_saude #colocar aqui o final sem dinheiro
+        jump morte_sem_dinheiro #colocar aqui o final sem dinheiro
         $sentinela = false
     else:
         return #aqui significa que o jogo pode continuar sem problema.
-
-
 
 
 #colocar um trilha sonora triste nestas 3 primeiras

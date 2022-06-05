@@ -60,7 +60,7 @@ label empresa_rival:
             $salario = salario*1.2
             $felicidade -=5
         "Recusar proposta":
-            "Seu chefe gostou da sua posição de fidelidade em relação à empresa em que você trabalha ":
+            "Seu chefe gostou da sua posição de fidelidade em relação à empresa em que você trabalha "
             $trabalho += 10
 
     return
@@ -86,12 +86,14 @@ label palestra_james:
 
                 
 label algoritmo:
+    scene algoritmo_james
     "James construiu um algoritmo com o objetivo de prever se um indivíduo é criminoso ou não baseado em alguns dados da pessoa."
 
     #TODO: escolher o minigame.
     return
 
 label final_feliz_tecnologia:
+    scene james_ceo
     "James é CEO / sócio de uma grande empresa e alcança o status de milionário"
     return
 
