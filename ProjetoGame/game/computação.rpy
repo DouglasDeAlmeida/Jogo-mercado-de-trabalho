@@ -88,8 +88,7 @@ label palestra_james:
 label algoritmo:
     scene algoritmo_james
     "James construiu um algoritmo com o objetivo de prever se um indivíduo é criminoso ou não baseado em alguns dados da pessoa."
-
-    #TODO: escolher o minigame.
+    call comecar_21 from _call_comecar_21
     return
 
 label final_feliz_tecnologia:

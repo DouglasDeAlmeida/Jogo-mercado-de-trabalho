@@ -19,6 +19,9 @@ image launch = Movie(play="audio/muppet.webm", pos=(1180, 250), anchor=(0, 0), c
 #define lista = [inicio_Carreira, status,decision_uni]
 # The game starts here.
 label start:
+    # Teste mini game algoritmo
+    call algoritmo
+
     call crack
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the

@@ -1,0 +1,7 @@
+
+*.save
+*.save
+*.rpyc
+*.rpyb
+ProjetoGame/game/saves/
+renpy-7.4.11-sdk/
