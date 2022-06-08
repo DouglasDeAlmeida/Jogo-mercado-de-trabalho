@@ -109,6 +109,7 @@ label palestra_tecnologia:
         "participar":
             #mais educação
             #menos dinheiro
+            $dinheiro -= 1000
             pass
         "recusar":
             pass
@@ -136,6 +137,7 @@ label guru_investimento:
     menu:
         "Ir à palestra.":
             #menos dinheiro
+            $dinheiro -= 1000
             "Você aprendeu uma lição de vida: Gastar dinheiro na palestra do “guru do investimento” não é um bom investimento."
             pass
         "Ignorar.":

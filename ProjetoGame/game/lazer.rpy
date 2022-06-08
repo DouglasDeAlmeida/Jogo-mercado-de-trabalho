@@ -159,6 +159,7 @@ label crack:
             
             $dinheiro -= 2000
             $drogado = True
+            call crack2
         "Recusar a proposta":
             "Apesar de sua aparência, James diz que nunca usou nenhuma droga e que hoje não irá cruzar essa linha."
     return
@@ -168,8 +169,8 @@ label crack2:
 
         scene crack_img
         "James sente abstinência e vai em busca do seu amigo Gustavo para mais crack.
-        Se ele não satisfazer seu desejo, se sentirá muito mais infeliz.
         "
+        protagonista "Sinto que se não satisfazer meu desejo, me sentirei muito mais infeliz."
         menu:
             "Aceitar o Crack":
                 "James fuma o crack e se sente melhor
@@ -179,6 +180,7 @@ label crack2:
                 
                 $dinheiro -= 2000
                 $drogado = True
+                #call etBilu
             "Recusar a proposta":
                 "James diz não às drogas"
                 $felicidade = felicidade/3

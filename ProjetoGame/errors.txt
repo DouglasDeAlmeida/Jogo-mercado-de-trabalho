@@ -2,14 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/lazer.rpy", line 137: invalid syntax
-    saúde -= 20
-       ^
+File "game/memoria.rpy", line 112: invalid syntax
+    turns_left - = 1
+                  ^
     
 
-File "game/script.rpy", line 13: expected '=' not found.
-    define socio
-                ^
-
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Jun  5 13:46:42 2022
+Wed Jun  8 02:45:24 2022

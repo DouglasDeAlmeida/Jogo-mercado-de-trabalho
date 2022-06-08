@@ -10,18 +10,20 @@ define despesa = 1000
 define educacao = 0
 define salario = 0
 define trabalho = 0
+define idade = 18
 define socio = False
 define protagonista = Character("James")
 define som = 0.5 #volume para a narração
 define sentinela = True
-define drogado = False
+define drogado = False#variavel que verifica se o james é viciado
+define reabilitado = 0 #variaavel que vai marcar se o james vai se recuperar do vício em crack
 image launch = Movie(play="audio/muppet.webm", pos=(1180, 250), anchor=(0, 0), channel= "movie", size=(300,500))
 #define lista = [inicio_Carreira, status,decision_uni]
 # The game starts here.
 label start:
-    # Teste mini game algoritmo
-    call algoritmo
-
+    #scene black
+    #call memoria_game
+    #call algoritmo
     call crack
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
