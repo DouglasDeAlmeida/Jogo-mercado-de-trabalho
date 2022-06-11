@@ -2,10 +2,11 @@
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
+
 define e = Character("Eileen")
 define felicidade = 50 #vão de 0-100
 define saude = 50 #0-100
-define dinheiro = 4000
+define dinheiro = 50
 define despesa = 1000
 define educacao = 0
 define salario = 0
@@ -15,6 +16,7 @@ define socio = False
 define protagonista = Character("James")
 define som = 0.5 #volume para a narração
 define sentinela = True
+define desempregado = True
 define drogado = False#variavel que verifica se o james é viciado
 define reabilitado = 0 #variaavel que vai marcar se o james vai se recuperar do vício em crack
 image launch = Movie(play="audio/muppet.webm", pos=(1180, 250), anchor=(0, 0), channel= "movie", size=(300,500))
@@ -24,41 +26,37 @@ label start:
     #scene black
     #call memoria_game
     #call algoritmo
-    call crack
+    #call crack
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
     play music "audio/Trilha.mp3" volume 0.8
-
+    #teste
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-    call prologue
-    call supermercado
-
+    #call prologue
     #call beatriz
     show screen hbox_screen
-    call inicio_Carreira
-    call amigo_influencer
+    show screen barraAmizade
+
     
-    call decision_uni
-    call thailand
-    call grupo_caminhada
-    call festa_bernardo
-    call covid_38
-    call supermercado
-    call tinder
+    $lista = ['inicio_Carreira','mcdonalds_inicio','decision_uni']
+    $count = 0
+    while count < len(lista):
+        call status
+        if sentinela is True:
+            $renpy.call(label=lista[count])
+            $renpy.call(label=lista[count+1])
+            $count +=1
+            pause
+
     # This ends the game.
 
-#    init python:
-#        lista = [inicio_Carreira, status,decision_uni]
-#        count = 0
-#        while count < len(lista):
-#            renpy.call status
-#            if sentinela is True:
-#                call lista[count]
-#            
+  
+            
     return
+
 
 
 label prologue:

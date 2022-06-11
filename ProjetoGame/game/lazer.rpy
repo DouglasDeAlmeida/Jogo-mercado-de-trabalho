@@ -106,7 +106,7 @@ label drunk_driving:
 
         "Contratar o melhor advogado que conseguir achar":
             "O advogado que James contratou conseguiu livrar a pele dele nos tribunais"
-            $dinheiro -= 15000
+            $dinheiro = dinheiro/3
         "Poupar dinheiro e contratar qualquer advogado":
             scene prison2
             "James é condenado e preso por alguns dias. Seu chefe fica furioso ao saber disso"
@@ -144,6 +144,7 @@ label beatriz:
     return
 
 label crack:
+    $idade = 19
     scene crack_img
     "Batendo a perna pela cidade em busca de dinheiro, James chega em um beco.
     Ao se deparar onde ele está James dá meia volta e anda rapidamente, porém em sua fuga, uma mão lhe puxa o braço.
@@ -187,4 +188,43 @@ label crack2:
                 $reabilitado += 1
                 if reabilitado >=2:
                     $drogado=False 
+    return
+
+
+label etBilu:
+    scene floresta_bilu2
+    "James acorda no meio de uma floresta, confuso, procura uma saída."
+    "Após caminhar um pouco ele sente uma corrente de ar, desesperado por reencontrar a civilização, James vai em direção à corrente."
+    scene floresta_bilu
+    "James chega em uma planície e descobre que o vento vinha de uma nave alienígena aterrissando, James observa o evento atentamente atrás de uma árvore. "
+    "De dentro da nave sai um alienígena, em segundos o alien vira sua atenção a James e lhe faz um sinal para se aproximar."
+    scene bilu_out2
+    "James hesita inicialmente porém pensa que se o alien fosse violento já teria o eliminado, partindo dessa suposição James se aproxima do alien."
+    "Há uma barreira linguística entre os dois e James decide nomear seu novo companheiro de Bilu, Bilu pede para seu novo amigo lhe acompanhar à nave e James o segue."
+    "Lá dentro há diversas máquinas bizarras, Bilu cutuca James e aponta para uma poltrona com um capacete cheio de fios.
+    "
+    menu:
+        "ir para a poltrona e colocar o capacete":
+            "James põe o capacete e fecha os olhos. Ao abrir os olhos novamente ele está no espaço, James observa o passado da terra como um espectador,
+            anos se passam em microsegundos, James presencia tudo desde o surgimento dos primeiros organismos até a completa destruição do planeta (todo este processo sendo narrado por Morgan Freeman), sobrecarregado de informação James desmaia."
+            $dinheiro -= 15
+            $saude -= 10
+            $felicidade += 15
+            "ele acorda no meio da rua com uma dor de cabeça, ao seu lado seu amigo Gustavo desmaiado, ambos sem carteira. Após essa experiência James se sente mais motivado porém também começou a sentir dores de cabeça frequentemente."
+            " Devido à dor de cabeça, james decidiu ir ao médico. O médico diagnosticou James com ansiedade e receitou que ele tomasse 25 mg de “Agomelatina” diariamente ao se deitar durante duas semanas."
+        #"Com medo do que a máquina de Bilu é capaz James corre da nave":
+        "Correr da nave":
+            "James vê que a saída está se fechando e corre o mais rápido possível como se sua vida dependesse disso. "
+            "A escotilha está quase fechada e James pula por cima sem perceber que a nave estava voando, James cai e vê sua vida passando na frente dos seus olhos, ele recorda tudo:
+                do seu tempo no orfanato, da sua vida escolar, de todas as angústias e momentos felizes que passou, James relutante fecha os olhos e aceita seu destino"
+            "Ao abrir os olhos novamente James percebe que se encontra em um local familiar, ao seu lado seu amigo Gustavo James checa o seu bolso e novamente sente falta da sua carteira."
+            $dinheiro -= 15
+            $saude -= 10
+            $felicidade += 15
+    return
+
+
+
+label evento_galatico:
+    #TODO
     return

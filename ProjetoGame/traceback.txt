@@ -1,52 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 24, in script call
-    call memoria_game
-  File "game/memoria.rpy", line 108, in script
-    $ result = ui.interact ()
-  File "game/memoria.rpy", line 108, in <module>
-    $ result = ui.interact ()
-Exception: Grid not completely full.
+  File "game/script.rpy", line 49, in script
+    $renpy.call(lista[count])
+  File "game/script.rpy", line 49, in <module>
+    $renpy.call(lista[count])
+NameError: name 'lista' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 24, in script call
-    call memoria_game
-  File "game/memoria.rpy", line 108, in script
-    $ result = ui.interact ()
+  File "game/script.rpy", line 49, in script
+    $renpy.call(lista[count])
   File "renpy/ast.py", line 928, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "renpy/python.py", line 2245, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/memoria.rpy", line 108, in <module>
-    $ result = ui.interact ()
-  File "renpy/ui.py", line 298, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "renpy/display/core.py", line 3325, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "renpy/display/core.py", line 3737, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/screen.py", line 441, in visit_all
-    self.child.visit_all(callback, seen=None)
-  File "renpy/display/core.py", line 568, in visit_all
-    d.visit_all(callback, seen)
-  File "renpy/display/core.py", line 570, in visit_all
-    callback(self)
-  File "renpy/display/core.py", line 3737, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "renpy/display/layout.py", line 554, in per_interact
-    raise Exception("Grid not completely full.")
-Exception: Grid not completely full.
+  File "game/script.rpy", line 49, in <module>
+    $renpy.call(lista[count])
+NameError: name 'lista' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 ProjetoGame 1.0
-Wed Jun  8 02:56:01 2022
+Thu Jun  9 17:16:55 2022

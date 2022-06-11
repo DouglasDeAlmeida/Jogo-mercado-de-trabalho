@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/memoria.rpy", line 112: invalid syntax
-    turns_left - = 1
-                  ^
-    
+File "game/script.rpy", line 50: expected statement.
+    count +=1
+          ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Wed Jun  8 02:45:24 2022
+Thu Jun  9 17:20:48 2022

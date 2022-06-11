@@ -3,24 +3,28 @@
 label inicio_Carreira:
     scene thinking #imagem de fundo
     protagonista "Não consigo passar mais nem um minuto nessa casa, preciso de um lugar pra mim. Tenho um pouco de dinheiro que ganhei ajudando meu pai, entretanto, não é muito."
-    menu:
-        "Eu posso aceitar um emprego no McDonalds.":
-            call mcdonalds1
-            
-        "Vou virar entregador do Ifood.":
-            call ifood1
-        "vou jogar no bixo":
-            call jogo_do_bixo
-            
-        "Jogar ping pong":
-            call play_pong
-    scene clock1        
-    "passaram-se 1 ano"
-    call tempo(12)
     return
+    
+label mcdonalds_inicio:
+    if desempregado:
+        scene teste
+        $idade = 18.2
+        "James está com fome e vai ao McDonald's ao entrar no estabelecimento vê um cartaz de contratação."
+        menu:
+            protagonista"o que devo fazer?"
+
+            "aceitar emprego no McDonalds":
+                'James aceita a proposta e começa a trabalhar no Mcdonalds'
+                $dinheiro += 10
+                $felicidade -= 2
+                $desempregado = False
+            "Continuar procurando emprego":
+                $dinheiro -= 2
+    pass
 
 label decision_uni:
     scene thinking
+    $idade = 21
     protagonista "Será que eu uso o dinheiro que eu guardei nos ultimos meses para começar uma faculdade ? "
     menu:
         "Começar uma graduação":
@@ -30,30 +34,34 @@ label decision_uni:
             pass
     return
 
-
-label mcdonalds1:
-    scene teste
-    'agora sou garçom'
-    $ salario = 1500
-    $ felicidade = felicidade - 2
-    return
-
 label ifood1:
-    scene ifood
-    'ifood'
-    $ salario = 1200
-    $ felicidade = felicidade - 4
+    if desempregado:
+
+        scene ifood
+        'Caminhando na cidade James escutou que dá pra ganhar uma grana fácil virando entregador de ifood.'
+        menu:
+            "Tornar-se entregador do ifood":
+                protagonista"peguei imprestada a bicicleta da minha irmã para virar entregador do ifood"
+                $dinheiro +=10
+                $felicidade -= 4    
+                $desempregado = False
+
+            "recusar":
+                $dinheiro -= 2
+                
     return
 
 label jogo_do_bixo:
     scene jogo_bicho
     $ sorte = renpy.random.random()
+
     if sorte >= 0.9:
         $ dinheiro = dinheiro + 5000
         "Não acredito, eu ganheiii!"
     else:
         "perdi"
         $ dinheiro = dinheiro - 2000
+    #passar um ano
     return
 
 label faculdade:
@@ -63,12 +71,14 @@ label faculdade:
         "Ciências Contabeis":
             scene contabilidade
             #aqui seria bom registrar que ele fez esta escolha 
+
         "Sistemas de Informação":
             scene computing
             #aqui seria bom registrar que ele fez esta escolha 
         "Gastronomia":
             scene restaurante
             #aqui seria bom registrar que ele fez esta escolha 
+
         "Ciência da Computação":
             scene computing
             #aqui seria bom registrar que ele fez esta escolha 
@@ -120,15 +130,22 @@ label covid_38:
         "pedir para trabalhar de casa pro chefe":
             pass
             #mais dinheiro, menos saúde
+            $dinheiro += 500
+            $saude -=2
         "ir ao trabalho mesmo assim":
             pass
             # risco de contaminar o escritório com essa nova variante muito mais letal
             "Você contaminou o escritório todo com a sua nova variante, que por sinal é muito mais letal."
             "devido a complicações gerada pela covid-38 o seu chefe morre e você assume o lugar dele"
-                #mais dinheiro , menos saúde
+            #mais dinheiro , menos saúde
+            $dinheiro += 500
+            $saude -= 5
         "não trabalhar":
             pass
             #menos dinheiro, mais saúde, menos marcador de trabalho
+            $dinheiro -= 5
+            $saude +=2
+            $trabalho -= 3
 
     return
 
@@ -142,3 +159,4 @@ label guru_investimento:
             pass
         "Ignorar.":
             pass
+    return
