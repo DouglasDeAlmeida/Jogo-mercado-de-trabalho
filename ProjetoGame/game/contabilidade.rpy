@@ -66,6 +66,7 @@ label cupom_dourado:
     return 
 
 label demissao:
+    scene contabilidade_empresa
     $idade = 34
     "A empresa de James está passando por dificuldades financeiras e precisará demitir um funcionário para equilibrar as despesas. Kevin, colega de James da área de contabilidade, é um péssimo contador e tem dificuldade de resolver até problemas de matemática básica."
     menu:
@@ -78,6 +79,7 @@ label demissao:
     return
 
 label doente_para_reuniao:
+    scene reuniao_contabilidade
     $idade = 36 
     "James está doente porém hoje foi marcada uma reunião importante, junto com os chefes e outros funcionários sobre o futuro da empresa."
     menu:
@@ -113,7 +115,7 @@ label evento_final_contabilidade:
         "Os funcionários mais próximos de James batem boca com ele, afirmando que ele é o culpado pelo fracasso da empresa, seu funcionário mais leal nem olha na cara de James ao sair"
         "O dia se passa, mas o evento repercute, toda noite James rememora o evento,  o dinheiro não lhe ameniza a culpa."
         centered "Embora financeiramente estável, James viverá para sempre com culpa das suas escolhas."
-        $ renpy.full_restart()
+        jump morte_infelicidade
     else:
         play music "audio/audio_vitoria.mp3" volume 0.8
         centered "Com a ajuda de James a empresa continua de pé."
