@@ -41,15 +41,17 @@ label start:
     show screen barraAmizade
 
     
-    $lista = ['inicio_Carreira','mcdonalds_inicio','decision_uni']
+    #$lista = ['prologue','inicio_Carreira','mcdonalds_inicio','decision_uni','beatriz', 'crack', 'memoria_game', 'supermercado']
+    $lista = ['evento_final_contabilidade', 'drunk_driving', 'beatriz', 'crack']
     $count = 0
     while count < len(lista):
         call status
         if sentinela is True:
             $renpy.call(label=lista[count])
+            call status
             $renpy.call(label=lista[count+1])
-            $count +=1
-            pause
+            $count +=2
+            #pause
 
     # This ends the game.
 

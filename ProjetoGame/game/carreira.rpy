@@ -20,7 +20,7 @@ label mcdonalds_inicio:
                 $desempregado = False
             "Continuar procurando emprego":
                 $dinheiro -= 2
-    pass
+    return
 
 label decision_uni:
     scene thinking
@@ -82,9 +82,8 @@ label faculdade:
         "Ciência da Computação":
             scene computing
             #aqui seria bom registrar que ele fez esta escolha 
-    $despesa = despesa + 250
-    call tempo(12)
-    "fim da faculdade (APAGAR DEPOIS)"
+
+
     
     return 
 
@@ -105,24 +104,12 @@ if _return == "eileen":
 
 else:
 
-    e "Você ganhou, parabens!"
+    e "Você ganhou, parabéns!"
 
 
 
 #TODO: abaixo estão as escolhas sobre carreira que ainda não foram implementadas.
 
-label palestra_tecnologia:
-    scene conferencia_tec
-    "Você leu em um cartaz sobre uma palestra de tecnologia paga"
-    
-    menu:
-        "participar":
-            #mais educação
-            #menos dinheiro
-            $dinheiro -= 1000
-            pass
-        "recusar":
-            pass
 
 label covid_38:
     protagonista"não estou me sentindo muito bem, acho que contraí a nova variante da Covid-38"
@@ -130,7 +117,7 @@ label covid_38:
         "pedir para trabalhar de casa pro chefe":
             pass
             #mais dinheiro, menos saúde
-            $dinheiro += 500
+            $dinheiro += 5
             $saude -=2
         "ir ao trabalho mesmo assim":
             pass
@@ -138,7 +125,7 @@ label covid_38:
             "Você contaminou o escritório todo com a sua nova variante, que por sinal é muito mais letal."
             "devido a complicações gerada pela covid-38 o seu chefe morre e você assume o lugar dele"
             #mais dinheiro , menos saúde
-            $dinheiro += 500
+            $dinheiro += 5
             $saude -= 5
         "não trabalhar":
             pass

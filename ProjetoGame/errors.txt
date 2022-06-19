@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 50: expected statement.
-    count +=1
-          ^
+The label palestra_tecnologia is defined twice, at File "game/carreira.rpy", line 114:
+label palestra_tecnologia:
+and File "game/computação.rpy", line 56:
+label palestra_tecnologia:
+
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu Jun  9 17:20:48 2022
+Sun Jun 19 16:44:53 2022

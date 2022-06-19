@@ -2,7 +2,7 @@ label socio_empresa:
     "Um amigo de James abriu um novo negócio, começando do zero, e o chamou para ser sócio, porém é um negócio com riscos de dar errado"
     menu:
         "Aceitar a proposta":
-            $dinheiro += 5000
+            $dinheiro -= 5
             $socio = True
         "Recusar":
             $socio = False
@@ -14,7 +14,7 @@ label socio_empresa:
 label feedback_empresa:
     "O negócio de seu amigo está dando certo está dando certo e ele está lucrando bastante"
     if socio:
-        $dinheiro += 50000
+        $dinheiro += 30
         $felicidade += 5
     else:
         $felicidade -= 15
@@ -34,10 +34,12 @@ label linkedin:
         "Você entra no Linkedin e descobre uma grande oportunidade para iniciar a carreira estagiando na IBM. Você vai bem na entrevista de emprego e consegue o trabalho."
         call tempo(12)
         "Um ano se passa e a IBM resolve te efetivar como profissional da empresa"
+        $dinheiro += 10
         $salario = 10000
     if linkedin_account == False:
         "Caso James não tenha Linkedin: James é indicado por um amigo para trabalhar numa empresa de médio porte. Apesar de não ser o jeito perfeito de iniciar a carreira, James resolve abraçar a oportunidade"
         $salario = 4000
+        $dinheiro += 5
 
     return
 
@@ -51,6 +53,23 @@ label bom_trabalho_SC:
         $salario = 15000
         $felicidade +=10
     return
+
+
+label palestra_tecnologia:
+    scene conferencia_tec
+    "Você leu em um cartaz sobre uma palestra de tecnologia paga"
+    
+    menu:
+        "participar":
+            #mais educação
+            #menos dinheiro
+            #talvez aumentar o marcador de trabalho
+            $dinheiro -= 10
+            pass
+        "recusar":
+            pass
+    return
+
 
 label empresa_rival:
     "Uma empresa rival da empresa em que James trabalha o faz uma proposta, com um salário maior ao que ele recebe"
@@ -88,13 +107,17 @@ label palestra_james:
 label algoritmo:
     scene algoritmo_james
     "James construiu um algoritmo com o objetivo de prever se um indivíduo é criminoso ou não baseado em alguns dados da pessoa."
-    call comecar_21 from _call_comecar_21
+    call comecar_21 from _call_comecar_21#verificar esse from
     return
 
 label final_feliz_tecnologia:
     scene james_ceo
-    "James é CEO / sócio de uma grande empresa e alcança o status de milionário"
+    play music "audio/audio_vitoria.mp3" volume 0.8
+    centered"James é CEO / sócio de uma grande empresa e alcança o status de milionário"
     return
+
+label final_triste_tecnologia:
+    "James é um diretor de TI de sua empresa e têm um dinheiro mais que suficiente para sustentar a si mesmo"
 
 
 

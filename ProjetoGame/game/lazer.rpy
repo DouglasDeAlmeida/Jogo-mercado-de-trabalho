@@ -24,12 +24,14 @@ label grupo_caminhada:
 
 label supermercado:
     scene comprar_leite
+    stop music
+    play sound "audio/supermercado.mp3" volume 0.5
     protagonista "Tenho que ir ao supermercado para comprar leite"
     menu:
         "Comprar o leite mais barato":
             pass
             
-            $dinheiro -=50
+            $dinheiro -=5
             # 50% de chance de comprar leite estragado
                 # menos saúde se for o caso
                 # TALVEZ: caso não esteja estragado aumentar saúde
@@ -43,6 +45,7 @@ label supermercado:
 
 label festa_bernardo:
     scene festa
+    play sound "audio/festa.mp3" volume 0.3
     "Seu melhor amigo está dando uma festa o que você faz"
     $ sorte = renpy.random.random()
     menu:
@@ -86,14 +89,14 @@ label festa_bernardo:
                 "Você decide que desobedecer seu chefe para ficar por pouco tempo na festa não valeria a pena."
                 $felicidade -= 10
                 $trabalho += 3
-                $dinheiro += 1000
+                $dinheiro += 10
                 #Menos felicidade, Mais marcador de trabalho, Mais dinheiro
 
         "Ignorar a festa e continuar trabalhando":
-            $dinheiro += 1000
+            $dinheiro += 10
             $trabalho += 10
             $felicidade -= 10
-
+    stop sound
     return
 
 label drunk_driving:
@@ -108,11 +111,11 @@ label drunk_driving:
             "O advogado que James contratou conseguiu livrar a pele dele nos tribunais"
             $dinheiro = dinheiro/3
         "Poupar dinheiro e contratar qualquer advogado":
-            scene prison2
+            scene prision2
             "James é condenado e preso por alguns dias. Seu chefe fica furioso ao saber disso"
             $felicidade-=5
             $trabalho -= 10
-    
+    stop sound
     #call status
     return
 
@@ -138,8 +141,9 @@ label beatriz:
             "James acaba torcendo feio o pé jogando bola"
             $felicidade -= 5
             $saude -= 20
+    stop sound        
     play music "audio/Trilha.mp3" volume 0.8
-    stop sound
+    
 
     return
 
