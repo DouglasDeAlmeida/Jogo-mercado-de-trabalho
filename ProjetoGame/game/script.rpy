@@ -16,6 +16,7 @@ define socio = False
 define protagonista = Character("James")
 define som = 0.5 #volume para a narração
 define sentinela = True
+
 define desempregado = True
 define drogado = False#variavel que verifica se o james é viciado
 define reabilitado = 0 #variaavel que vai marcar se o james vai se recuperar do vício em crack
@@ -23,26 +24,16 @@ image launch = Movie(play="audio/muppet.webm", pos=(1180, 250), anchor=(0, 0), c
 #define lista = [inicio_Carreira, status,decision_uni]
 # The game starts here.
 label start:
-    #scene black
-    #call memoria_game
-    #call algoritmo
-    #call crack
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-    play music "audio/Trilha.mp3" volume 0.8
-    #teste
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-    #call prologue
-    #call beatriz
-    show screen hbox_screen
-    show screen barraAmizade
 
+
+    play music "audio/Trilha.mp3" volume 0.8
+    call prologue
+    show screen hbox_screen#mostra a idade
+    show screen barraAmizade#mostra os status em formato de barra
+    #vou fazer uma lista para cada carreira
     
-    #$lista = ['prologue','inicio_Carreira','mcdonalds_inicio','decision_uni','beatriz', 'crack', 'memoria_game', 'supermercado']
-    $lista = ['evento_final_contabilidade', 'drunk_driving', 'beatriz', 'crack']
+    #inicio
+    $lista_inicial = ['inicio_Carreira','mcdonalds_inicio','crack','decision_uni']
     $count = 0
     while count < len(lista):
         call status
@@ -52,6 +43,17 @@ label start:
             $renpy.call(label=lista[count+1])
             $count +=2
             #pause
+
+
+
+    #lista dos eventos de computação
+    $lista_computacao = ['linkedin', 'grupo_caminhada', 'palestra_james', 'thailand', 'covid_25', 'supermercado', 'empresa_rival', 'palestra_tecnologia','amor_de_escritorio', "bom_trabalho_SC", 'beatriz', 'festa_bernardo', 'programacao', 'drunk_driving', "cinco_anos", "dificuldade_codigo", "vegas", "socio_empresa", "affair", "feedback_empresa", "algoritmo"  ]
+
+    #lista dos eventos de contabilidade
+
+    #lista dos eventos de gastronomia
+
+
 
     # This ends the game.
 

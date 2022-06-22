@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 51, in script
-    $renpy.call(label=lista[count+1])
-  File "game/script.rpy", line 51, in <module>
-    $renpy.call(label=lista[count+1])
-IndexError: list index out of range
+  File "game/script.rpy", line 48, in script
+    while count < len(lista):
+  File "game/script.rpy", line 48, in <module>
+    while count < len(lista):
+NameError: name 'lista' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 51, in script
-    $renpy.call(label=lista[count+1])
-  File "renpy/ast.py", line 928, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "renpy/python.py", line 2245, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 51, in <module>
-    $renpy.call(label=lista[count+1])
-  File "renpy/python.py", line 992, in __getitem__
-    rv = list.__getitem__(self, index)
-IndexError: list index out of range
+  File "game/script.rpy", line 48, in script
+    while count < len(lista):
+  File "renpy/ast.py", line 1841, in execute
+    if renpy.python.py_eval(self.condition):
+  File "renpy/python.py", line 2276, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "renpy/python.py", line 2269, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 48, in <module>
+    while count < len(lista):
+NameError: name 'lista' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 ProjetoGame 1.0
-Sun Jun 19 14:12:09 2022
+Sun Jun 19 18:53:47 2022
