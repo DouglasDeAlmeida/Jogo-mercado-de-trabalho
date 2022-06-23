@@ -20,7 +20,7 @@ label feedback_empresa:
     else:
         protagonista"Que pena que não investi."
         $felicidade -= 15
-
+    return
 label dificuldade_codigo:
     $idade = 33
     "James está tendo dificuldades em realizar um código, desesperado, pesquisa na internet o que precisa."
@@ -71,7 +71,7 @@ label linkedin:
     
     if linkedin_account:
         "Você entra no Linkedin e descobre uma grande oportunidade para iniciar a carreira estagiando na IBM. Você vai bem na entrevista de emprego e consegue o trabalho."
-        call tempo(12)
+        
         "Um ano se passa e a IBM resolve te efetivar como profissional da empresa"
         $dinheiro += 10
         #$salario = 10000

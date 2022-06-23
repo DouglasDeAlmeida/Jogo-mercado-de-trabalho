@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label palestra_tecnologia is defined twice, at File "game/carreira.rpy", line 114:
-label palestra_tecnologia:
-and File "game/computação.rpy", line 56:
-label palestra_tecnologia:
-
+File "game/script.rpy", line 88: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation.
+    while count < len(lista_gastronomia):
+    ^
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Sun Jun 19 16:44:53 2022
+Thu Jun 23 19:42:42 2022

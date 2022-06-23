@@ -1,4 +1,5 @@
 label thailand:
+    $idade = 25
     scene thai
     "depois de uma viajem relaxante para a tailândia você se sente muito mais feliz. "
     $felicidade += 10 
@@ -9,6 +10,7 @@ label thailand:
     $saude -= 10
     return
 label grupo_caminhada:
+    $idade = 24
     scene caminhada
     "Seu amigo Bernardo te convidou para participar do grupo de caminhada"
     menu:
@@ -19,6 +21,7 @@ label grupo_caminhada:
             
             pass
         "recusar":
+            $saude -= 5
             pass
     return
 
@@ -38,12 +41,13 @@ label supermercado:
         "Comprar o leite mais caro":
             pass
             
-            $dinheiro -=100
+            $dinheiro -=10
             $saude += 5 
             #um pouco mais de saude
     return
 
 label festa_bernardo:
+    $idade = 30
     scene festa
     play sound "audio/festa.mp3" volume 0.3
     "Seu melhor amigo está dando uma festa o que você faz"
@@ -120,6 +124,7 @@ label drunk_driving:
     return
 
 label beatriz:
+    $idade = 30
     scene opera_outside
     "James reencontra sua amiga de infância, Beatriz, que coincidentemente se mudou para perto de onde mora. Agora ela é uma cantora de ópera, e o convida para ir de graça num show que ela irá fazer."
     "porém, o show é no mesmo horário em que você havia prometido jogar futebol com o Bernardo."
@@ -162,7 +167,7 @@ label crack:
             $felicidade += 5
             $saude -= 15
             
-            $dinheiro -= 2000
+            $dinheiro -= 20
             $drogado = True
             call crack2
         "Recusar a proposta":
@@ -183,9 +188,9 @@ label crack2:
                 $felicidade += 5
                 $saude -= 15
                 
-                $dinheiro -= 2000
+                $dinheiro -= 10
                 $drogado = True
-                #call etBilu
+                call etBilu
             "Recusar a proposta":
                 "James diz não às drogas"
                 $felicidade = felicidade/3

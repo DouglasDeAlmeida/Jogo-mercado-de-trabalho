@@ -33,7 +33,7 @@ label gabriela:
     return
 
 label amor_de_escritorio:
-    "a Amanda não para de olhar e sorrir para você além de ser sempre muito simpática. Você acha que ela tem uma queda por ti."
+    "a Amanda, sua colega de trabalho, não para de olhar e sorrir para você além de ser sempre muito simpática. Você acha que ela tem uma queda por ti."
     menu:
         "Convidá-la para um encontro":
             "Ela aceita e em pouco tempo os dois iniciam um namoro"

@@ -1,13 +1,15 @@
 label inicio_gastronomia:
+    $idade = 24
     scene cozinha
     "James conseguiu uma oportunidade para cozinhar num restaurante de pequeno porte, porém nesse estabelecimento, James vai ficando estressado pois trabalha muitas horas por dia e recebe pouco"
     $salario = 2000
+    $dinheiro += 5
     $felicidade -= 5
     $trabalho += 5
+    return
 
 
-
-label Jacquin:
+label jacquin:
     scene jacquin
     "O chef Jacquin  do “pesadelo na cozinha”  veio avaliar o restaurante em que James trabalha."
     #colocar aqui o minigame
@@ -29,7 +31,7 @@ label amigo_influencer:
 
     menu:
         "subornar ele":
-            $dinheiro -= 5000
+            $dinheiro -= 25
             $trabalho += 35
         "pedir que seu amigo pague a conta e se retire.":
             "Seu amigo bravo da forma que foi tratado dá um chilique na rede social dizendo que é um crime esse restaurante ainda estar aberto.
@@ -44,7 +46,8 @@ label preparo_prato:
     scene prato
     "James estava com problemas no preparo de um prato, uma outra cozinheira vendo sua dificuldade ficou com pena e preparou o seu pedido sozinha sem os outros verem. 
     O cliente que recebeu o prato gostou muito da comida e pediu para o garçom chamar o chef para parabenizá-lo."
-
+    $felicidade+=5
+    $trabalho += 5
     return
 
 
@@ -60,6 +63,7 @@ label ratatouille:
             $dinheiro -= 50
             $trabalho -= 1
         "Fingir que nada aconteceu e entregar a sopa ao garçom.":
+            scene rato2
             "Os clientes reclamam de que a sopa está com gosto horrível, pagam pela comida mas reclamam com o chefe e criticam o restaurante nas redes sociais. Consequentemente seu chefe fica frustrado com a sua incapacidade de preparar uma sopa."
             $trabalho -=5
         "Curioso com o comportamento do rato e se sentindo inspirado em um filme, você tenta colocá-lo debaixo do seu chapéu de cozinheiro e deixa ele te guiar.":
@@ -75,19 +79,23 @@ label ratatouille:
 
 label bom_trabalho:
     #TODO: IMAGEM
-    "Devido ao seu esforço você recebeu uma oportunidade de trabalho em um restaurante de luxo"
-    $salario = 5000
-    $felicidade += 5
+    if trabalho >= 40:
+        "Devido ao seu esforço você recebeu uma oportunidade de trabalho em um restaurante de luxo"
+        $salario = 5000
+        $felicidade += 5
     return
 
 label waitress:
     scene garconete
-    protagonista"Acho que a Julia, a garçonete, está afim de mim, ela não vive me olhando e sempre sorri quando eu olho de volta."
+    protagonista"Acho que a Julia, a garçonete, está afim de mim, ela não vive me olhando e sempre puxa papo comigo."
     menu:
         "Dar em cima da garçonete":
             "Acontece que ela estava apenas sendo educada. Sua atitude irritou Julia e ela te denunciou pro gerente, pois achou seu comportamento inadequado"
             $felicidade -= 5
             $trabalho -= 5
+        "não fazer nada":
+            pass
+    return
 
 label compras_restaurante:
     scene comprar_ingredientes
@@ -117,8 +125,8 @@ label promotion_chef:
 #Continuação de um evento do cenário neutro
 label restaurant_automation:
     #Em um evento futuro, o restaurante onde James trabalha passa por um processo de automação. Dependendo de como está o marcador de trabalho,
-    # James pode ser substituído pela máquina e ser demitido (fim de jogo)  ou ser um dos únicos funcionários que continuará trabalhando no estabelecimento. A personagem que te pediu em namoro no evento anterior será demitida do estabelecimento.
-
+    # James pode ser substituído pela máquina e ser demitido (fim de jogo)  ou ser um dos únicos funcionários que continuará trabalhando no estabelecimento.
+    #scene automation_gastro
 
 
 
@@ -126,5 +134,6 @@ label restaurant_automation:
 
 label final_feliz_gastronomia:
     "James torna-se um chef de um grande restaurante, conhecido no país inteiro, considerado um dos melhores de sua profissão"
-    #adicionar imagem
+    #TODO: adicionar imagem
+    play music "audio/audio_vitoria.mp3" volume 0.8
     $ renpy.full_restart()

@@ -17,6 +17,11 @@ define protagonista = Character("James")
 define som = 0.5 #volume para a narração
 define sentinela = True
 
+define ciencias_contabeis = False
+define ciencia_computacao = False
+define curso_gastronomia = False
+
+
 define desempregado = True
 define drogado = False#variavel que verifica se o james é viciado
 define reabilitado = 0 #variaavel que vai marcar se o james vai se recuperar do vício em crack
@@ -35,25 +40,58 @@ label start:
     #inicio
     $lista_inicial = ['inicio_Carreira','mcdonalds_inicio','crack','decision_uni']
     $count = 0
-    while count < len(lista):
+    while count < len(lista_inicial):
         call status
         if sentinela is True:
-            $renpy.call(label=lista[count])
+            $renpy.call(label=lista_inicial[count])
             call status
-            $renpy.call(label=lista[count+1])
+            $renpy.call(label=lista_inicial[count+1])
             $count +=2
             #pause
 
 
+    if ciencia_computacao == True:
+        #lista dos eventos de computação
+        $lista_computacao = ['linkedin', 'grupo_caminhada', 'palestra_james', 'thailand', 'covid_25', 'supermercado', 'empresa_rival', 'tinder','palestra_tecnologia',
+        'amor_de_escritorio', "bom_trabalho_SC", 'beatriz', 'festa_bernardo', 'programacao', 'drunk_driving', "cinco_anos", "dificuldade_codigo", "vegas", "socio_empresa", "affair", "feedback_empresa", "algoritmo"  ]
+        $count = 0
+        while count < len(lista_computacao):
+            call status
+            if sentinela is True:
+                $renpy.call(label=lista_computacao[count])
+                call status
+                $renpy.call(label=lista_computacao[count+1])
+                $count +=2
 
-    #lista dos eventos de computação
-    $lista_computacao = ['linkedin', 'grupo_caminhada', 'palestra_james', 'thailand', 'covid_25', 'supermercado', 'empresa_rival', 'palestra_tecnologia','amor_de_escritorio', "bom_trabalho_SC", 'beatriz', 'festa_bernardo', 'programacao', 'drunk_driving', "cinco_anos", "dificuldade_codigo", "vegas", "socio_empresa", "affair", "feedback_empresa", "algoritmo"  ]
-
-    #lista dos eventos de contabilidade
-
-    #lista dos eventos de gastronomia
 
 
+
+    if ciencias_contabeis == True:
+        #lista dos eventos de contabilidade
+        $lista_contabilidade = ['estagio', 'grupo_caminhada', 'misto', 'thailand', 'covid_25', 'supermercado', 'raiva', 'tinder', 'guru_investimento', 'amor_de_escritorio', 'excedente', 'beatriz', 'festa_bernardo',
+        'cupom_dourado', 'drunk_driving', 'cinco_anos','demissao', 'vegas', 'aposentadoria_chefe', 'affair','doente_para_reuniao', 'evento_final_contabilidade']
+        $count = 0
+        while count < len(lista_contabilidade):
+            call status
+            if sentinela is True:
+                $renpy.call(label=lista_contabilidade[count])
+                call status
+                $renpy.call(label=lista_contabilidade[count+1])
+                $count +=2
+
+
+    if curso_gastronomia == True:
+        #lista dos eventos de gastronomia
+        $lista_gastronomia = ['inicio_gastronomia', 'grupo_caminhada', 'thailand', 'covid_25', 'supermercado', 'ratatouille', 'tinder', 'guru_investimento', 'bom_trabalho', 'waitress', 'beatriz', 'festa_bernardo',
+        'compras_restaurante', 'drunk_driving', 'cinco_anos', 'amigo_influencer', 'vegas', 'preparo_prato','affair','jacquin']
+        $count = 0
+        while count < len(lista_gastronomia):
+            call status
+            if sentinela is True:
+                $renpy.call(label=lista_gastronomia[count])
+                call status
+                $renpy.call(label=lista_gastronomia[count+1])
+                $count +=2
 
     # This ends the game.
 

@@ -70,18 +70,30 @@ label faculdade:
     menu:
         "Ciências Contabeis":
             scene contabilidade
-            #aqui seria bom registrar que ele fez esta escolha 
+            $ciencias_contabeis = True
+            $ciencia_computacao = False
+            $curso_gastronomia = False
+
 
         "Sistemas de Informação":
             scene computing
-            #aqui seria bom registrar que ele fez esta escolha 
+            $ciencias_contabeis = False
+            $ciencia_computacao = True
+            $curso_gastronomia = False
+
         "Gastronomia":
             scene restaurante
-            #aqui seria bom registrar que ele fez esta escolha 
+            $ciencias_contabeis = False
+            $ciencia_computacao = False
+            $curso_gastronomia = True
+
 
         "Ciência da Computação":
             scene computing
-            #aqui seria bom registrar que ele fez esta escolha 
+            $ciencias_contabeis = False
+            $ciencia_computacao = True
+            $curso_gastronomia = False
+
 
 
     
@@ -111,8 +123,8 @@ else:
 #TODO: abaixo estão as escolhas sobre carreira que ainda não foram implementadas.
 
 
-label covid_38:
-    protagonista"não estou me sentindo muito bem, acho que contraí a nova variante da Covid-38"
+label covid_25:
+    protagonista"não estou me sentindo muito bem, acho que contraí a nova variante da Covid-25"
     menu:
         "pedir para trabalhar de casa pro chefe":
             pass
@@ -141,9 +153,9 @@ label guru_investimento:
     menu:
         "Ir à palestra.":
             #menos dinheiro
-            $dinheiro -= 1000
+            $dinheiro -= 10
             "Você aprendeu uma lição de vida: Gastar dinheiro na palestra do “guru do investimento” não é um bom investimento."
-            pass
+            
         "Ignorar.":
             pass
     return

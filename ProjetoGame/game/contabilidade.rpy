@@ -12,6 +12,7 @@ label misto:
         "aceitar os ensinamentos do chefe":
             scene misto2
             " Você se realiza que não agregou nada do que o chefe te disse, e ouve sirene tocando dentro do edifício, que acabou causando um incêndio devido a chapa ligada"
+            
             $felicidade -= 5
             $trabalho -= 5
         "recusar os ensinamentos do chefe":
@@ -99,9 +100,14 @@ label doente_para_reuniao:
     return
 label aposentadoria_chefe:
     $idade = 34 #TODO: alterar essa idade
-    "O chefe de James se aposentou e saiu do cargo, caso o marcador de trabalho estiver acima de 50%, James será o novo gerente da empresa"
-    $dinheiro += 25
-    $felicidade += 10
+    "O chefe de James se aposentou e saiu do cargo, a empresa está procurando alguem para substituí-lo"
+    if trabalho >= 50:
+        "Devido ao seu bom trabalho James foi promovido a gerente"
+        $dinheiro += 25
+        $felicidade += 10
+    else:
+        "James é visto como alguem que não tem muito comprometindo com o trabalho, por isso, não conseguiu a vaga de gerente."
+        $felicidade -= 10
     return
 label evento_final_contabilidade:
     $idade += 4
