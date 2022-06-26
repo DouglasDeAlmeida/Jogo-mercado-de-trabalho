@@ -30,7 +30,6 @@ image launch = Movie(play="audio/muppet.webm", pos=(1180, 250), anchor=(0, 0), c
 # The game starts here.
 label start:
 
-
     play music "audio/Trilha.mp3" volume 0.8
     call prologue
     show screen hbox_screen#mostra a idade

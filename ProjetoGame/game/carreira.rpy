@@ -112,7 +112,7 @@ label play_pong:
 scene eileen_img
 if _return == "eileen":
 
-    e "Perdeu Otário!"
+    e "Perdeu, Otário!"
 
 else:
 
@@ -124,6 +124,7 @@ else:
 
 
 label covid_25:
+    scene covid
     protagonista"não estou me sentindo muito bem, acho que contraí a nova variante da Covid-25"
     menu:
         "pedir para trabalhar de casa pro chefe":
@@ -149,6 +150,7 @@ label covid_25:
     return
 
 label guru_investimento:
+    scene guru_investimento
     "Você leu em um cartaz sobre um tal “Guru dos investimentos” , uma palestra paga, com o guru Gian Buffoni"
     menu:
         "Ir à palestra.":

@@ -78,7 +78,7 @@ label ratatouille:
 
 
 label bom_trabalho:
-    #TODO: IMAGEM
+    scene leite_estragado
     if trabalho >= 40:
         "Devido ao seu esforço você recebeu uma oportunidade de trabalho em um restaurante de luxo"
         $salario = 5000
@@ -116,6 +116,7 @@ label compras_restaurante:
 
 
 label promotion_chef:
+    scene cargo_melhor
     "Devido ao seu bom trabalho você foi promovido a chef"
     $salario = 20000
     $felicidade += 20
@@ -133,7 +134,7 @@ label restaurant_automation:
 
 
 label final_feliz_gastronomia:
+    scene trabalho_olhar
     "James torna-se um chef de um grande restaurante, conhecido no país inteiro, considerado um dos melhores de sua profissão"
-    #TODO: adicionar imagem
     play music "audio/audio_vitoria.mp3" volume 0.8
     $ renpy.full_restart()

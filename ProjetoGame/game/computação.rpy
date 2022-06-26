@@ -1,5 +1,5 @@
 label socio_empresa:
-    
+    scene amigo_negocio
     "Um amigo de James abriu um novo negócio, começando do zero, e o chamou para ser sócio, porém é um negócio com riscos de dar errado"
     menu:
         "Aceitar a proposta":
@@ -13,6 +13,7 @@ label socio_empresa:
 
 
 label feedback_empresa:
+    scene loteria
     "O negócio de seu amigo está dando certo está dando certo e ele está lucrando bastante"
     if socio:
         $dinheiro += 30
@@ -23,6 +24,7 @@ label feedback_empresa:
     return
 label dificuldade_codigo:
     $idade = 33
+    scene amigo_pesquisa
     "James está tendo dificuldades em realizar um código, desesperado, pesquisa na internet o que precisa."
     "depois de uma longa pesquisa James acha um código que parece ter tudo que precisa para realizar a tarefa, porém não entende como ele funciona."
     menu:
@@ -48,6 +50,7 @@ label dificuldade_codigo:
 
 label programacao:
     $idade = 30
+    scene pesquisa
     "James se encarregou de fazer uma programação e apresentar seus resultados para seu chefe. A prazo para finalizar esse código é hoje, porém James ainda não terminou e está quase na hora dele ser liberado do trabalho"
     menu: 
         "Ficar mais tempo no trabalho até resolver o código":
@@ -60,6 +63,7 @@ label programacao:
     return
 label linkedin:
     $idade = 23
+    scene linkedin
     define linkedin_account = False
     menu:
         protagonista"Devo criar um Linkedin?"
@@ -88,6 +92,7 @@ label linkedin:
 label bom_trabalho_SC:
     $idade = 29
     #"Passando-se uns anos, se o marcador de James estiver acima da metade, ele será promovido a um cargo melhor e será mais bem pago"
+    scene cargo_melhor
     if trabalho >= 50:
         "Você foi promovido a um cargo melhor"
         #$salario = 15000
@@ -115,6 +120,7 @@ label palestra_tecnologia:
 
 label empresa_rival:
     $idade = 27
+    scene empresa_melhor
     "Uma empresa rival da empresa em que James trabalha o faz uma proposta, com um salário maior ao que ele recebe"
     menu:
         "aceitar a proposta":
@@ -130,6 +136,7 @@ label empresa_rival:
 
 
 label palestra_james:
+    scene palestra
     "James foi convidado a dar uma palestra sobre tecnologia para jovens aprendizes da área. É a primeira grande palestra que James irá apresentar em sua vida."
     menu:
         "Recusar o convite, pois não se sente preparado.":
@@ -161,6 +168,7 @@ label final_feliz_tecnologia:
     return
 
 label final_triste_tecnologia:
+    scene empresa_ti
     "James é um diretor de TI de sua empresa e têm um dinheiro mais que suficiente para sustentar a si mesmo"
 
 

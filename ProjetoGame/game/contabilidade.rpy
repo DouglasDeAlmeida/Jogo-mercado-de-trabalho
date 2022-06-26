@@ -100,6 +100,7 @@ label doente_para_reuniao:
     return
 label aposentadoria_chefe:
     $idade = 34 #TODO: alterar essa idade
+    scene demitido
     "O chefe de James se aposentou e saiu do cargo, a empresa está procurando alguem para substituí-lo"
     if trabalho >= 50:
         "Devido ao seu bom trabalho James foi promovido a gerente"
@@ -111,6 +112,7 @@ label aposentadoria_chefe:
     return
 label evento_final_contabilidade:
     $idade += 4
+    scene amigo_pesquisa
     centered "A empresa em que James trabalha está falindo."
     "James tem uma última carta na manga, ele usa todos os recursos da empresa na tentativa de reinventá-la para que a empresa se encaixe nos tempos modernos."
     "Ele tenta implementar um site para vender papéis online de forma automática e eficaz. E ele precisa contratar profissionais de TI para isso, mesmo com a empresa não tendo verba para contratar novas pessoas naquele momento."

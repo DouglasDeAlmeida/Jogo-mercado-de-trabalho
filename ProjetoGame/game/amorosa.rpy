@@ -33,6 +33,7 @@ label gabriela:
     return
 
 label amor_de_escritorio:
+    scene trabalho_olhar
     "a Amanda, sua colega de trabalho, não para de olhar e sorrir para você além de ser sempre muito simpática. Você acha que ela tem uma queda por ti."
     menu:
         "Convidá-la para um encontro":
@@ -44,7 +45,7 @@ label amor_de_escritorio:
     return
 
 label affair:
-
+    scene traicao
     "James descobre que sua esposa está o traindo com o professor de tênis dela"
     menu:
         "pedir divórcio":
