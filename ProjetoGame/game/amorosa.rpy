@@ -15,10 +15,10 @@ label tinder:
 
 
 label gabriela:
-    scene namorada
+    scene eileen_img
     
     "Gabriela a mulher que você encontrou através do Tinder disse que a menstruação dela está atrasada"
-    scene pregnant
+    scene prego
     menu:
     
         "Pedir para ela fazer um aborto":

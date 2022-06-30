@@ -62,7 +62,7 @@ label ratatouille:
 
         "Matar o rato e jogar a sopa fora":
             "Você acaba fazendo uma confusão tentando matar o rato chamando a atenção do seu chefe , no momento que o seu chefe chega na cozinha ele vê você jogando a sopa no lixo e fica frustrado e desconta o preço da sopa do seu salário."
-            $dinheiro -= 50
+            $dinheiro -= 20
             $trabalho -= 1
         "Fingir que nada aconteceu e entregar a sopa ao garçom.":
             scene rato2
@@ -74,8 +74,8 @@ label ratatouille:
             "Seu chefe briga com você e te inscreve em um hospital psiquiátrico, além disso o rato lhe infectou com hantavírus (ou Peste bubônica), uma doença incurável."
             $trabalho -= 10
             $saude -= 20
-            $dinheiro -= 1000
-            $felicidade -= 50
+            $dinheiro -= 50
+            $felicidade -= 30
     return
 
 

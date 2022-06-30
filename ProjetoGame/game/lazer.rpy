@@ -81,14 +81,14 @@ label festa_bernardo:
                         
                         $felicidade -= 10
                         $trabalho += 3
-                        $dinheiro += 1000
+                        $dinheiro += 10
                         #menos felicidade, um pouco mais no marcador de trabalho, mais dinheiro
 
                     "Dizer que não pode e ir à festa":
                         
                         $felicidade += 5
                         $trabalho -= 10
-                        $dinheiro -= 2000
+                        $dinheiro -= 20
                         #mais felicidade, muito menos no marcador de trabalho, menos dinheiro.
         "Pedir ao seu chefe para ser liberado um pouco mais cedo do trabalho":
             
