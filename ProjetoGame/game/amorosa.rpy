@@ -45,15 +45,16 @@ label amor_de_escritorio:
     return
 
 label affair:
-    scene traicao
-    "James descobre que sua esposa está o traindo com o professor de tênis dela"
-    menu:
-        "pedir divórcio":
-            $felicidade -= 15
-            pass
-        "perdoar ela":
-            $felicidade -= 10
-            pass
+    if casado == True:
+        scene traicao
+        "James descobre que sua esposa está o traindo com o professor de tênis dela"
+        menu:
+            "pedir divórcio":
+                $felicidade -= 15
+                pass
+            "perdoar ela":
+                $felicidade -= 10
+                pass
 
     return
 

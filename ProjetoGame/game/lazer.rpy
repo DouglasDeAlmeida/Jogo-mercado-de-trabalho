@@ -1,13 +1,22 @@
 label thailand:
     $idade = 25
     scene thai
-    "depois de uma viajem relaxante para a tailândia você se sente muito mais feliz. "
-    $felicidade += 10 
     
-    scene prostituta
-    "Entretanto, durante sua estadia em Bankok você contraiu gonorreia de uma prostituta"
+    menu: 
+        protagonista"Estou me sentindo um pouco estressado com o trabalho, será que devo pedir férias e viajar? "
+        "sim":
+            "depois de uma viajem relaxante para a tailândia você se sente muito mais feliz. "
+            $felicidade += 10 
+            $dinheiro -= 15
+            $saude -= 10
+            scene prostituta
+            "Entretanto, durante sua estadia em Bankok você contraiu gonorreia de uma prostituta"
+        "não":
+            $saude -= 15
+            pass
     
-    $saude -= 10
+    
+    
     return
 label grupo_caminhada:
     $idade = 24
@@ -27,7 +36,7 @@ label grupo_caminhada:
 
 label supermercado:
     scene comprar_leite
-    stop music
+    #stop music
     play sound "audio/supermercado.mp3" volume 0.5
     protagonista "Tenho que ir ao supermercado para comprar leite"
     menu:
@@ -44,6 +53,8 @@ label supermercado:
             $dinheiro -=10
             $saude += 5 
             #um pouco mais de saude
+
+    stop sound
     return
 
 label festa_bernardo:
@@ -177,7 +188,7 @@ label crack:
 label crack2:
     if drogado is True:
 
-        scene crack_img
+        scene cracolandia
         "James sente abstinência e vai em busca do seu amigo Gustavo para mais crack.
         "
         protagonista "Sinto que se não satisfazer meu desejo, me sentirei muito mais infeliz."
@@ -230,10 +241,36 @@ label etBilu:
             $dinheiro -= 15
             $saude -= 10
             $felicidade += 15
+    call crack3
     return
 
+label crack3:
+    if drogado is True:
 
+        scene cracolandia
+        "James sente abstinência e vai em busca do seu amigo Gustavo para mais crack.
+        "
+        protagonista "Sinto que se não satisfazer meu desejo, me sentirei muito mais infeliz."
+        menu:
+            "Aceitar o Crack":
+                "James fuma o crack e se sente melhor
+                "
+                $felicidade += 5
+                $saude -= 15
+                
+                $dinheiro = dinheiro*0.05
+                $drogado = True
+                call drGori
+            "Recusar a proposta":
+                "James diz não às drogas"
+                $felicidade = felicidade/3
+                $reabilitado += 1
+                if reabilitado >=2:
+                    $drogado=False 
+    return
 
-label evento_galatico:
+label drGori:
     #TODO
+    scene gori1
+    "você encontra o Grande Dr Gori"
     return

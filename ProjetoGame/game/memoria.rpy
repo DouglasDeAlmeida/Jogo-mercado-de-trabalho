@@ -134,7 +134,7 @@ label memo_game_lose:
     hide screen memo_scr
     $ renpy.pause (0.1, hard = True)
     centered "Você perdeu!"
-    jump memoria_game
+    call final_triste_tecnologia
     
 # winnings
 label memo_game_win:
@@ -142,4 +142,5 @@ label memo_game_win:
     $ renpy.pause (0.1, hard = True)
     #centered "{size = 36} {b} Winning! {/ b} {/ size}"
     centered " Parabens, Você ganhou!"
+    call final_feliz_tecnologia
     return

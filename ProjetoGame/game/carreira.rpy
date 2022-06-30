@@ -19,7 +19,7 @@ label mcdonalds_inicio:
                 $felicidade -= 2
                 $desempregado = False
             "Continuar procurando emprego":
-                $dinheiro -= 2
+                $dinheiro -= 10
     return
 
 label decision_uni:
@@ -47,7 +47,7 @@ label ifood1:
                 $desempregado = False
 
             "recusar":
-                $dinheiro -= 2
+                $dinheiro = dinheiro*0.1
                 
     return
 
@@ -99,6 +99,9 @@ label faculdade:
     
     return 
 
+label preenchimento:
+    
+    return
 label play_pong:
 
     window hide  
@@ -109,16 +112,16 @@ label play_pong:
     $ quick_menu = True
     window show
 
-scene eileen_img
-if _return == "eileen":
+    scene eileen_img
+    if _return == "eileen":
 
-    e "Perdeu, Otário!"
+        e "Perdeu, Otário!"
 
-else:
+    else:
 
-    e "Você ganhou, parabéns!"
+        e "Você ganhou, parabéns!"
 
-
+    return
 
 #TODO: abaixo estão as escolhas sobre carreira que ainda não foram implementadas.
 

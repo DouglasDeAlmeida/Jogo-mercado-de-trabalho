@@ -52,12 +52,12 @@ label excedente:
 
 label cupom_dourado:
     scene cupom
-    "James teve uma ideia para tentar alavancar as vendas de sua empresa: colocar um cupom dourado dentro de um pacote de papéis aleatório, e quem comprar esse pacote específico garante 50% de desconto na compra de novos papéis da empresa durante 1 ano."
+    "James teve uma ideia para tentar alavancar as vendas de sua empresa: colocar um cupom dourado dentro de um pacote de papéis aleatório, e quem comprar esse pacote específico garante 50 por cento de desconto na compra de novos papéis da empresa durante 1 ano."
     "James chega a comentar a ideia com Jim, seu colega de trabalho, porém tem medo de que a ideia acabe dando errado dependendo de qual cliente consiga o cupom (se for um dos principais clientes da empresa, eles podem acabar tendo prejuízo ao invés de lucro)"
     $idade = 31
     menu:
         "Persistir com a ideia e contá-la para seu chefe":
-            "seu chefe gostou da ideia do bilhete e implementou. A ideia foi um sucesso e a empresa lucrou bastante. Seu chefe decide aumentar seu salário para 20% a mais que o atual"
+            "seu chefe gostou da ideia do bilhete e implementou. A ideia foi um sucesso e a empresa lucrou bastante. Seu chefe decide aumentar seu salário para 20 por cento a mais que o atual"
             $dinheiro = dinheiro * 1.2
             $felicidade += 10
             $trabalho += 20
@@ -117,6 +117,7 @@ label evento_final_contabilidade:
     "James tem uma última carta na manga, ele usa todos os recursos da empresa na tentativa de reinventá-la para que a empresa se encaixe nos tempos modernos."
     "Ele tenta implementar um site para vender papéis online de forma automática e eficaz. E ele precisa contratar profissionais de TI para isso, mesmo com a empresa não tendo verba para contratar novas pessoas naquele momento."
     #TODO: colocar minigame aqui
+    call play_pong
     if perdeu_minigame:
         centered "A empresa faliu."
         "Os funcionários recolhem seus pertences, e uma cena horrível, alguns saem chorando, outros tem ataque de pânico, com medo de não ter o que comer no amanhã."
@@ -125,6 +126,7 @@ label evento_final_contabilidade:
         centered "Embora financeiramente estável, James viverá para sempre com culpa das suas escolhas."
         jump morte_infelicidade
     else:
+        scene james_ceo
         play music "audio/audio_vitoria.mp3" volume 0.8
         centered "Com a ajuda de James a empresa continua de pé."
         

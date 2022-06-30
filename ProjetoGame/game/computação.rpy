@@ -158,13 +158,14 @@ label palestra_james:
 label algoritmo:
     scene algoritmo_james
     "James construiu um algoritmo com o objetivo de prever se um indivíduo é criminoso ou não baseado em alguns dados da pessoa."
-    call comecar_21 from _call_comecar_21#verificar esse from
+    call memoria_game
+    #call comecar_21 from _call_comecar_21#verificar esse from
     return
 
 label final_feliz_tecnologia:
     scene james_ceo
     play music "audio/audio_vitoria.mp3" volume 0.8
-    centered"James é CEO / sócio de uma grande empresa e alcança o status de milionário"
+    "Parabens, devido as boas decisões James tornou-se CEO / sócio de uma grande empresa e alcançau o status de milionário"
     return
 
 label final_triste_tecnologia:

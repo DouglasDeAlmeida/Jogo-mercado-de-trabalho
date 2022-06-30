@@ -16,7 +16,7 @@ define socio = False
 define protagonista = Character("James")
 define som = 0.5 #volume para a narração
 define sentinela = True
-
+define perdeu_minigame = False
 define ciencias_contabeis = False
 define ciencia_computacao = False
 define curso_gastronomia = False
@@ -37,7 +37,7 @@ label start:
     #vou fazer uma lista para cada carreira
     
     #inicio
-    $lista_inicial = ['inicio_Carreira','mcdonalds_inicio','crack','decision_uni']
+    $lista_inicial = ['inicio_Carreira','mcdonalds_inicio','crack','ifood1','decision_uni', 'preenchimento']
     $count = 0
     while count < len(lista_inicial):
         call status

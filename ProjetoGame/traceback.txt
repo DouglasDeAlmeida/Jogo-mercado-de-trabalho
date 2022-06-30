@@ -1,32 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 91, in script call
-    $renpy.call(label=lista_gastronomia[count])
-  File "game/gastronomia.rpy", line 16, in script
-    if win:
-  File "game/gastronomia.rpy", line 16, in <module>
-    if win:
-NameError: name 'win' is not defined
+  File "game/script.rpy", line 78, in script call
+    $renpy.call(label=lista_contabilidade[count+1])
+  File "game/contabilidade.rpy", line 121, in script
+    if perdeu_minigame:
+  File "game/contabilidade.rpy", line 121, in <module>
+    if perdeu_minigame:
+NameError: name 'perdeu_minigame' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 91, in script call
-    $renpy.call(label=lista_gastronomia[count])
-  File "game/gastronomia.rpy", line 16, in script
-    if win:
+  File "game/script.rpy", line 78, in script call
+    $renpy.call(label=lista_contabilidade[count+1])
+  File "game/contabilidade.rpy", line 121, in script
+    if perdeu_minigame:
   File "renpy/ast.py", line 1898, in execute
     if renpy.python.py_eval(condition):
   File "renpy/python.py", line 2276, in py_eval
     return py_eval_bytecode(code, globals, locals)
   File "renpy/python.py", line 2269, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/gastronomia.rpy", line 16, in <module>
-    if win:
-NameError: name 'win' is not defined
+  File "game/contabilidade.rpy", line 121, in <module>
+    if perdeu_minigame:
+NameError: name 'perdeu_minigame' is not defined
 
 Windows-10-10.0.19041
 Ren'Py 7.4.11.2266
 ProjetoGame 1.0
-Thu Jun 23 19:43:21 2022
+Wed Jun 29 23:09:02 2022

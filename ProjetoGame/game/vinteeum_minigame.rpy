@@ -20,7 +20,7 @@ screen cartas:
 label comecar_21:
     $ vitorias = 0
 
-    "Ganhe 3 vezes no Blackjack, prove que você é sortudo, e seu algoritmo bombará no mercado"
+    "Ganhe 3 vezes no Blackjack, prove que você é sortudo e você obterá sucesso!"
 
     call vinteeum(True)
     call vinteeum
@@ -29,9 +29,17 @@ label comecar_21:
     hide screen cartas
     
     if vitorias >= 3:
-        "Parabéns, você ganhou 3 vezes no Blackjack e seu algoritmo bombará no mercado"
+        "Parabéns, você ganhou 3 vezes no Blackjack"
+        scene jacquin
+        "Jacquin gostou da comida e lhe dá uma estrela michelin. "
+        jump final_feliz_gastronomia
     else:
         "Perdeu tudo"
+        scene jacquin
+        $dinheiro = 0
+        "Jacquin te chama de incopetente e dedica um episódio completo de seu programa para criticar o seu restaurante"
+        "O restaurante é fechado e todos foram demitidos, incluindo James."
+        jump morte_sem_dinheiro
     return
 label vinteeum(primeira_jogada=False):
     scene tb

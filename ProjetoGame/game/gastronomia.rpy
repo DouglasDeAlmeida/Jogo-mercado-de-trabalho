@@ -13,6 +13,8 @@ label jacquin:
     scene jacquin
     "O chef Jacquin  do “pesadelo na cozinha”  veio avaliar o restaurante em que James trabalha."
     #colocar aqui o minigame
+    call comecar_21 from _call_comecar_21
+    
     if win:
         "Jacquin gostou da comida e lhe dá uma estrela michelin. "
         jump final_feliz_gastronomia

@@ -7,7 +7,7 @@ screen hbox_screen:
         yalign 0.01
         spacing 10
 
-        text "dinheiro: [dinheiro] " color "#da1e1e" 
+        #text "dinheiro: [dinheiro] " color "#da1e1e" 
         #text "felicidade: [felicidade] " color "#da1e1e" 
         #text "saúde: [saude] " color "#da1e1e" 
         text "Idade: [idade] " color "#da1e1e" 
