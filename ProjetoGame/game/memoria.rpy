@@ -96,6 +96,7 @@ label memoria_game:
                 cards_list.append ({"c_number": i, "c_value": values_list [i], "c_chosen": False})
     $ memo_timer = max_time
     # show the game screen
+    scene black
     show screen memo_scr
     # main game loop
     label memo_game_loop:
@@ -135,7 +136,7 @@ label memo_game_lose:
     $ renpy.pause (0.1, hard = True)
     centered "Você perdeu!"
     call final_triste_tecnologia
-    
+    return
 # winnings
 label memo_game_win:
     hide screen memo_scr
