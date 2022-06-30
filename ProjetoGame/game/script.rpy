@@ -26,6 +26,7 @@ define desempregado = True
 define drogado = False#variavel que verifica se o james é viciado
 define reabilitado = 0 #variaavel que vai marcar se o james vai se recuperar do vício em crack
 image launch = Movie(play="audio/muppet.webm", pos=(1180, 250), anchor=(0, 0), channel= "movie", size=(300,500))
+image gori = Movie(play="audio/gori2.webm", pos=(0, 0), anchor=(0, 0), channel= "movie", size=(1920,1080))
 #define lista = [inicio_Carreira, status,decision_uni]
 # The game starts here.
 label start:

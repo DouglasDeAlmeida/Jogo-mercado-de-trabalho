@@ -272,5 +272,10 @@ label crack3:
 label drGori:
     #TODO
     scene gori1
-    "você encontra o Grande Dr Gori"
+    
+    "Enquanto James está desacordado no meio do lixo um gorila utilizando roupas e uma peruca loira aparece e o transforma em um monstro feito de lixo e poluição"
+    show gori
+    
+    centered"{size=+100}GAME OVER{/size}"
+    $ renpy.full_restart()
     return
