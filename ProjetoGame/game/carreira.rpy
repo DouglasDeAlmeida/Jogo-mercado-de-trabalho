@@ -28,7 +28,7 @@ label decision_uni:
     protagonista "Será que eu uso o dinheiro que eu guardei nos ultimos meses para começar uma faculdade ? "
     menu:
         "Começar uma graduação":
-            
+            $dinheiro -= 10
             call faculdade
         "Não é o momento certo":
             pass
@@ -112,10 +112,10 @@ label play_pong:
     $ quick_menu = True
     window show
 
-    scene eileen_img
+    #scene eileen_img
     if _return == "eileen":
-
-        e "Perdeu, Otário!"
+        $perdeu_minigame=True
+        #e "Perdeu, Otário!"
 
     else:
 

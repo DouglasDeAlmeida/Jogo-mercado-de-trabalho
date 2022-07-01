@@ -119,8 +119,10 @@ label evento_final_contabilidade:
     #TODO: colocar minigame aqui
     call play_pong
     if perdeu_minigame:
-        centered "A empresa faliu."
-        "Os funcionários recolhem seus pertences, e uma cena horrível, alguns saem chorando, outros tem ataque de pânico, com medo de não ter o que comer no amanhã."
+        
+        scene amigo_pesquisa
+        centered "{size=+100}A empresa faliu.{/size}"
+        "Os funcionários recolhem seus pertences, em uma cena horrível, alguns saem chorando, outros tem ataque de pânico, com medo de não ter o que comer no amanhã."
         "Os funcionários mais próximos de James batem boca com ele, afirmando que ele é o culpado pelo fracasso da empresa, seu funcionário mais leal nem olha na cara de James ao sair"
         "O dia se passa, mas o evento repercute, toda noite James rememora o evento,  o dinheiro não lhe ameniza a culpa."
         centered "Embora financeiramente estável, James viverá para sempre com culpa das suas escolhas."

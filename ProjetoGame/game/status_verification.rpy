@@ -28,13 +28,16 @@ label status:
 #colocar um trilha sonora triste nestas 3 primeiras
 label morte_infelicidade:
     scene morte_felicidade
+    play sound "audio/morte_infelicidade.mp3" volume som
     "Você se enforcou na sua sala devido a sua depressão."
     $ renpy.full_restart()
 label morte_sem_saude:
     scene morte_saude
-    "Você teve uma parada cardíaca no trabalho devido ao alto estresse"
+    play sound "audio/morte_saude.mp3" volume som
+    "Você teve uma parada cardíaca devido ao alto estresse."
     $ renpy.full_restart()
 label morte_sem_dinheiro:
     scene morte_pobre
+    play sound "audio/morte_dinheiro.mp3" volume som
     "Você foi à falência, sem dinheiro para pagar o aluguel ou comer teve que ir para às ruas. Em uma noite outro mendigo te esfaqueou até a morte para ficar com a sua barraca em baixo da ponte."
     $ renpy.full_restart()

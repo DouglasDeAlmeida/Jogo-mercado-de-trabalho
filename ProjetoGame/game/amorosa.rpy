@@ -38,7 +38,8 @@ label amor_de_escritorio:
     menu:
         "Convidá-la para um encontro":
             "Ela aceita e em pouco tempo os dois iniciam um namoro"
-            $felicidade += 5 
+            $felicidade += 5
+            $namorando = True 
             pass
         "Continuar na sua":
             pass

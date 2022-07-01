@@ -165,7 +165,7 @@ label algoritmo:
 label final_feliz_tecnologia:
     scene james_ceo
     play music "audio/audio_vitoria.mp3" volume 0.8
-    "Parabens, devido as boas decisões James tornou-se CEO / sócio de uma grande empresa e alcançau o status de milionário."
+    "Parabens, devido as boas decisões James tornou-se CEO / sócio de uma grande empresa e alcançou o status de milionário."
     return
 
 label final_triste_tecnologia:
