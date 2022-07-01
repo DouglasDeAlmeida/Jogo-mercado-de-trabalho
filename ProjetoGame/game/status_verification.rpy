@@ -38,6 +38,9 @@ label morte_sem_saude:
     $ renpy.full_restart()
 label morte_sem_dinheiro:
     scene morte_pobre
-    play sound "audio/morte_dinheiro.mp3" volume som
-    "Você foi à falência, sem dinheiro para pagar o aluguel ou comer teve que ir para às ruas. Em uma noite outro mendigo te esfaqueou até a morte para ficar com a sua barraca em baixo da ponte."
+    play sound "audio/morte_dinheiro1.mp3" volume som
+    
+    "Você foi à falência, sem dinheiro para pagar o aluguel ou comer teve que ir para às ruas. "
+    play sound "audio/morte_dinheiro2.mp3" volume som
+    "Em uma noite outro mendigo te esfaqueou até a morte para ficar com a sua barraca em baixo da ponte."
     $ renpy.full_restart()
