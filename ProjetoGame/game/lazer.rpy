@@ -225,8 +225,8 @@ label etBilu:
     "
     menu:
         "ir para a poltrona e colocar o capacete":
-            "James põe o capacete e fecha os olhos. Ao abrir os olhos novamente ele está no espaço, James observa o passado da terra como um espectador,
-            anos se passam em microsegundos, James presencia tudo desde o surgimento dos primeiros organismos até a completa destruição do planeta (todo este processo sendo narrado por Morgan Freeman), sobrecarregado de informação James desmaia."
+            "James põe o capacete e fecha os olhos. Ao abrir os olhos novamente ele está no espaço, James observa o passado da terra como um espectador"
+            "anos se passam em microsegundos, James presencia tudo desde o surgimento dos primeiros organismos até a completa destruição do planeta (todo este processo sendo narrado por Morgan Freeman), sobrecarregado de informação James desmaia."
             $dinheiro -= 15
             $saude -= 10
             $felicidade += 15
@@ -271,9 +271,14 @@ label crack3:
 
 label drGori:
     #TODO
-    scene gori1
+    scene cracolandia2
     
-    "Enquanto James está desacordado no meio do lixo um gorila utilizando roupas e uma peruca loira aparece e o transforma em um monstro feito de lixo e poluição"
+    "James acorda e percebe que está todo molhado e com cheiro de urina."
+    protagonista"Acho que dessa vez eu fui longe demais, de hoje em diante vou parar com as drogas"
+    "Enquanto James caminhava de volta pra casa com um sorriso no rosto e uma esperança no olhar ele sente a terra tremer"
+    scene gori1
+    "Um gorila de peruca loira e roupa branca causou um terremoto que mata James"
+    
     show gori
     
     centered"{size=+100}GAME OVER{/size}"
